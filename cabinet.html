@@ -1,100 +1,129 @@
 <!DOCTYPE html>
 <html class="page no-js" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css">
+    <!-- Edge и ряд мобильных браузеров слишком умны. Отключим это. -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta name="format-detection" content="date=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta content="notranslate" name="google" />
 
-  <!-- Edge и ряд мобильных браузеров слишком умны. Отключим это. -->
-  <meta name="format-detection" content="telephone=no">
-  <meta name="format-detection" content="address=no">
-  <meta name="format-detection" content="date=no">
-  <meta name="format-detection" content="email=no">
-  <meta content="notranslate" name="google">
+    <!-- Предзагрузка шрифтов или иных ресурсов -->
+    <!-- <link rel="preload" href="fonts/Bloggersans.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
 
-  <!-- Предзагрузка шрифтов или иных ресурсов -->
-  <!-- <link rel="preload" href="fonts/Bloggersans.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>The Real Movers | Cabinet</title>
+  </head>
 
-  <title>The Real Movers | Cabinet</title>
-</head>
-
-<body>
-  <div class="mobile-menu" id="mobile-menu">
-    <div class="mobile-menu__backdrop" id="backdrop"></div>
-    <div class="mobile-menu__inner"></div>
-  </div>
-  <div class="page__inner">
-    <div class="page__content">
-      <header class="page-header">
-        <div class="container">
-          <div class="page-header__inner">
-            <a class="logo" href="/">
-              <img src="images/logo.svg" alt="logotype">
-            </a>
-
-            <nav class="main-nav" id="nav" data-da=".mobile-menu__inner,991,1">
-              <ul class="main-nav__list">
-                <li class="main-nav__item main-nav__item--has-child">
-                  <a class="main-nav__link" href="#">Board</a>
-                  <div class="main-nav__sublist-wrapper main-nav__sublist-wrapper--lvl-2">
-                    <ul class="main-nav__list main-nav__list--lvl-2">
-                      <li class="main-nav__item main-nav__item--lvl-2">
-                        <a class="main-nav__link main-nav__link--lvl-2" href="cubic-feets.html">Cubic feets</a>
-                      </li>
-                      <li class="main-nav__item main-nav__item--lvl-2">
-                        <a class="main-nav__link main-nav__link--lvl-2" href="pick-ups.html">Pick ups</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="main-nav__item main-nav__item--has-child">
-                  <a class="main-nav__link" href="#">Post job</a>
-                  <div class="main-nav__sublist-wrapper main-nav__sublist-wrapper--lvl-2">
-                    <ul class="main-nav__list main-nav__list--lvl-2">
-                      <li class="main-nav__item main-nav__item--lvl-2">
-                        <a class="main-nav__link main-nav__link--lvl-2" href="new-pick-up-post.html">Pick up</a>
-                      </li>
-                      <li class="main-nav__item main-nav__item--lvl-2">
-                        <a class="main-nav__link main-nav__link--lvl-2" href="new-cf-post.html">Cubic feet</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="pricing.html">Pricing</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="app-tutorial.html">App tutorial</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="about.html">About us</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="contact-us.html">Contact us</a>
-                </li>
-              </ul>
-            </nav>
-
-            <div class="auth-block" data-da=".mobile-menu__inner,991,3">
-              <a class="auth-block__link" href="#">
-                <svg width="12" height="14">
-                  <use xlink:href="images/sprite.svg#user-icon">
-                  </use>
-                </svg>
-                Log in
+  <body>
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu__backdrop" id="backdrop"></div>
+      <div class="mobile-menu__inner"></div>
+    </div>
+    <div class="page__inner">
+      <div class="page__content">
+        <header class="page-header">
+          <div class="container">
+            <div class="page-header__inner">
+              <a class="logo" href="index.html">
+                <img src="images/logo.svg" alt="logotype" />
               </a>
-              <a class="auth-block__link auth-block__link--accent" href="#">
-                Sign up
-              </a>
-            </div>
 
-            <!-- <div class="user-nav">
+              <nav
+                class="main-nav"
+                id="nav"
+                data-da=".mobile-menu__inner,991,1"
+              >
+                <ul class="main-nav__list">
+                  <li class="main-nav__item main-nav__item--has-child">
+                    <a class="main-nav__link" href="#">Board</a>
+                    <div
+                      class="main-nav__sublist-wrapper main-nav__sublist-wrapper--lvl-2"
+                    >
+                      <ul class="main-nav__list main-nav__list--lvl-2">
+                        <li class="main-nav__item main-nav__item--lvl-2">
+                          <a
+                            class="main-nav__link main-nav__link--lvl-2"
+                            href="cubic-feets.html"
+                            >Cubic feets</a
+                          >
+                        </li>
+                        <li class="main-nav__item main-nav__item--lvl-2">
+                          <a
+                            class="main-nav__link main-nav__link--lvl-2"
+                            href="pick-ups.html"
+                            >Pick ups</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="main-nav__item main-nav__item--has-child">
+                    <a class="main-nav__link" href="#">Post job</a>
+                    <div
+                      class="main-nav__sublist-wrapper main-nav__sublist-wrapper--lvl-2"
+                    >
+                      <ul class="main-nav__list main-nav__list--lvl-2">
+                        <li class="main-nav__item main-nav__item--lvl-2">
+                          <a
+                            class="main-nav__link main-nav__link--lvl-2"
+                            href="new-pick-up-post.html"
+                            >Pick up</a
+                          >
+                        </li>
+                        <li class="main-nav__item main-nav__item--lvl-2">
+                          <a
+                            class="main-nav__link main-nav__link--lvl-2"
+                            href="new-cf-post.html"
+                            >Cubic feet</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="pricing.html">Pricing</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="app-tutorial.html"
+                      >App tutorial</a
+                    >
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="about.html">About us</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="contact-us.html"
+                      >Contact us</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+
+              <div class="auth-block" data-da=".mobile-menu__inner,991,3">
+                <a class="auth-block__link" href="#">
+                  <svg width="12" height="14">
+                    <use xlink:href="images/sprite.svg#user-icon"></use>
+                  </svg>
+                  Log in
+                </a>
+                <a class="auth-block__link auth-block__link--accent" href="#">
+                  Sign up
+                </a>
+              </div>
+
+              <!-- <div class="user-nav">
           <div class="user-nav__info-wrap">
             <img src="images/user-thumbnail.jpeg" width="36" height="36" alt="user thumbnail" class="user-nav__thumbnail">
             <div class="user-nav__name">igor</div>
@@ -121,834 +150,1223 @@
           </ul>
       </div> -->
 
-            <button class="burger" id="burger" data-target-id="mobile-menu" data-target-class-toggle="mobile-menu--opened" aria-label="mobile menu button">
-              <span></span>
-              <span></span>
-            </button>
+              <button
+                class="burger"
+                id="burger"
+                data-target-id="mobile-menu"
+                data-target-class-toggle="mobile-menu--opened"
+                aria-label="mobile menu button"
+              >
+                <span></span>
+                <span></span>
+              </button>
+            </div>
           </div>
-        </div>
-      </header>
+        </header>
 
-      <main class="page__main">
-        <div class="cabinet page-section">
-          <div class="container">
-            <div class="cabinet__inner">
-              <aside class="cabinet__sidebar">
-                <div class="user-info">
-                  <img src="images/user-thumbnail.jpeg" width="100" height="100" alt="user avatar" class="user-info__avatar">
-                  <div class="user-info__fullname">Igor Sudenko</div>
-                  <div class="user-info__phone">+380 93 941 65 89</div>
-                </div>
-                <nav class="cabinet-navigation" data-da=".cabinet__inner,768,3">
-                  <ul class="cabinet-navigation__list">
-                    <li class="cabinet-navigation__list-item">
-                      <a class="cabinet-navigation__list-item-link cabinet-navigation__list-item-link--active" href="cabinet.html">
-                        <svg width="13" height="16">
-                          <use xlink:href="images/sprite.svg#user-icon">
-                          </use>
+        <main class="page__main">
+          <div class="cabinet page-section">
+            <div class="container">
+              <div class="cabinet__inner">
+                <aside class="cabinet__sidebar">
+                  <div class="user-info">
+                    <img
+                      src="images/user-thumbnail.jpeg"
+                      width="100"
+                      height="100"
+                      alt="user avatar"
+                      class="user-info__avatar"
+                    />
+                    <div class="user-info__fullname">Igor Sudenko</div>
+                    <div class="user-info__phone">+380 93 941 65 89</div>
+                  </div>
+                  <nav
+                    class="cabinet-navigation"
+                    data-da=".cabinet__inner,768,3"
+                  >
+                    <ul class="cabinet-navigation__list">
+                      <li class="cabinet-navigation__list-item">
+                        <a
+                          class="cabinet-navigation__list-item-link cabinet-navigation__list-item-link--active"
+                          href="cabinet.html"
+                        >
+                          <svg width="13" height="16">
+                            <use xlink:href="images/sprite.svg#user-icon"></use>
+                          </svg>
+                          <span
+                            >Personal <br />
+                            Information</span
+                          >
+                        </a>
+                      </li>
+                      <li class="cabinet-navigation__list-item">
+                        <a
+                          class="cabinet-navigation__list-item-link"
+                          href="billing-profile.html"
+                        >
+                          <svg width="16" height="12">
+                            <use
+                              xlink:href="images/sprite.svg#payment-card-icon"
+                            ></use>
+                          </svg>
+                          <span
+                            >Billing <br />
+                            Profile</span
+                          >
+                        </a>
+                      </li>
+                      <li class="cabinet-navigation__list-item">
+                        <a
+                          class="cabinet-navigation__list-item-link"
+                          href="billing-history.html"
+                        >
+                          <svg width="16" height="16">
+                            <use
+                              xlink:href="images/sprite.svg#dollar-icon"
+                            ></use>
+                          </svg>
+                          <span
+                            >Billing <br />
+                            History</span
+                          >
+                        </a>
+                      </li>
+                      <li class="cabinet-navigation__list-item">
+                        <a
+                          class="cabinet-navigation__list-item-link"
+                          href="work-history.html"
+                        >
+                          <svg width="16" height="16">
+                            <use
+                              xlink:href="images/sprite.svg#storage-icon"
+                            ></use>
+                          </svg>
+                          <span
+                            >Work <br />
+                            History</span
+                          >
+                        </a>
+                      </li>
+                      <li class="cabinet-navigation__list-item">
+                        <a
+                          class="cabinet-navigation__list-item-link"
+                          href="reset-password.html"
+                        >
+                          <svg width="16" height="16">
+                            <use xlink:href="images/sprite.svg#key-icon"></use>
+                          </svg>
+                          <span>Reset Password</span>
+                        </a>
+                      </li>
+                      <li
+                        class="cabinet-navigation__list-item cabinet-navigation__list-item--logout"
+                      >
+                        <a class="cabinet-navigation__list-item-link" href="#">
+                          <svg width="16" height="12">
+                            <use
+                              xlink:href="images/sprite.svg#logout-icon"
+                            ></use>
+                          </svg>
+                          <span>Logout</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </aside>
+                <div class="cabinet__content">
+                  <ul class="cabinet__accordion accordion js-accordion">
+                    <li class="accordion__item">
+                      <h3 class="accordion__title">
+                        <svg width="20" height="24">
+                          <use xlink:href="images/sprite.svg#user-icon"></use>
                         </svg>
-                        <span>Personal <br> Information</span>
-                      </a>
-                    </li>
-                    <li class="cabinet-navigation__list-item">
-                      <a class="cabinet-navigation__list-item-link" href="billing-profile.html">
-                        <svg width="16" height="12">
-                          <use xlink:href="images/sprite.svg#payment-card-icon">
-                          </use>
-                        </svg>
-                        <span>Billing <br> Profile</span>
-                      </a>
-                    </li>
-                    <li class="cabinet-navigation__list-item">
-                      <a class="cabinet-navigation__list-item-link" href="billing-history.html">
-                        <svg width="16" height="16">
-                          <use xlink:href="images/sprite.svg#dollar-icon">
-                          </use>
-                        </svg>
-                        <span>Billing <br> History</span>
-                      </a>
-                    </li>
-                    <li class="cabinet-navigation__list-item">
-                      <a class="cabinet-navigation__list-item-link" href="work-history.html">
-                        <svg width="16" height="16">
-                          <use xlink:href="images/sprite.svg#storage-icon">
-                          </use>
-                        </svg>
-                        <span>Work <br> History</span>
-                      </a>
-                    </li>
-                    <li class="cabinet-navigation__list-item">
-                      <a class="cabinet-navigation__list-item-link" href="reset-password.html">
-                        <svg width="16" height="16">
-                          <use xlink:href="images/sprite.svg#key-icon">
-                          </use>
-                        </svg>
-                        <span>Reset Password</span>
-                      </a>
-                    </li>
-                    <li class="cabinet-navigation__list-item cabinet-navigation__list-item--logout">
-                      <a class="cabinet-navigation__list-item-link" href="#">
-                        <svg width="16" height="12">
-                          <use xlink:href="images/sprite.svg#logout-icon">
-                          </use>
-                        </svg>
-                        <span>Logout</span>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-              </aside>
-              <div class="cabinet__content">
-                <ul class="cabinet__accordion accordion js-accordion">
-                  <li class="accordion__item">
-                    <h3 class="accordion__title">
-                      <svg width="20" height="24">
-                        <use xlink:href="images/sprite.svg#user-icon">
-                        </use>
-                      </svg>
-                      Personal Information
-                    </h3>
-                    <div class="accordion__content accordion__content--personal-info">
-                      <form class="user-edit-form">
-                        <h2 class="user-edit-form__title">Personal Information</h2>
-                        <div class="user-edit-form__top-wrap">
-                          <label class="user-edit-form__avatar-file-upload">
-                            <input type="file">
-                            SI
-                          </label>
-                          <div>
-                            <div class="user-edit-form__fullname">
-                              <span>Sudenko Igor</span>
-                              <button class="user-edit-form__edit-btn" type="button">
-                                <svg width="14" height="14">
-                                  <use xlink:href="images/sprite.svg#edit-icon">
-                                  </use>
-                                </svg>
-                              </button>
+                        Personal Information
+                      </h3>
+                      <div
+                        class="accordion__content accordion__content--personal-info"
+                      >
+                        <form class="user-edit-form">
+                          <h2 class="user-edit-form__title">
+                            Personal Information
+                          </h2>
+                          <div class="user-edit-form__top-wrap">
+                            <label class="user-edit-form__avatar-file-upload">
+                              <input type="file" />
+                              SI
+                            </label>
+                            <div>
+                              <div class="user-edit-form__fullname">
+                                <span>Sudenko Igor</span>
+                                <button
+                                  class="user-edit-form__edit-btn"
+                                  type="button"
+                                >
+                                  <svg width="14" height="14">
+                                    <use
+                                      xlink:href="images/sprite.svg#edit-icon"
+                                    ></use>
+                                  </svg>
+                                </button>
+                              </div>
+                              <div class="user-edit-form__phone">
+                                +380 939416589
+                              </div>
                             </div>
-                            <div class="user-edit-form__phone">+380 939416589</div>
                           </div>
-                        </div>
-                        <div class="user-edit-form__fields-wrap">
-                          <label class="field-text">
-                            <span class="field-text__name">First name</span>
-                            <span class="field-text__input-wrap">
-                                <input class="field-text__input" type="text">
+                          <div class="user-edit-form__fields-wrap">
+                            <label class="field-text">
+                              <span class="field-text__name">First name</span>
+                              <span class="field-text__input-wrap">
+                                <input class="field-text__input" type="text" />
                               </span>
-                          </label>
-                          <label class="field-text">
-                            <span class="field-text__name">Last name</span>
-                            <span class="field-text__input-wrap">
-                                <input class="field-text__input" type="text">
+                            </label>
+                            <label class="field-text">
+                              <span class="field-text__name">Last name</span>
+                              <span class="field-text__input-wrap">
+                                <input class="field-text__input" type="text" />
                               </span>
-                          </label>
-                          <label class="field-text">
-                            <span class="field-text__name">Phone</span>
-                            <span class="field-text__input-wrap">
-                                <input class="field-text__input" type="text">
+                            </label>
+                            <label class="field-text">
+                              <span class="field-text__name">Phone</span>
+                              <span class="field-text__input-wrap">
+                                <input class="field-text__input" type="text" />
                               </span>
-                          </label>
-                          <label class="field-text">
-                            <span class="field-text__name">Email</span>
-                            <span class="field-text__input-wrap">
-                                <input class="field-text__input" type="text">
+                            </label>
+                            <label class="field-text">
+                              <span class="field-text__name">Email</span>
+                              <span class="field-text__input-wrap">
+                                <input class="field-text__input" type="text" />
                               </span>
-                          </label>
-                          <label class="field-text">
-                            <span class="field-text__name">Company name</span>
-                            <span class="field-text__input-wrap">
-                                <input class="field-text__input" type="text" placeholder="(optional)">
+                            </label>
+                            <label class="field-text">
+                              <span class="field-text__name">Company name</span>
+                              <span class="field-text__input-wrap">
+                                <input
+                                  class="field-text__input"
+                                  type="text"
+                                  placeholder="(optional)"
+                                />
                               </span>
-                          </label>
-                          <button class="button button--full-width button--primary" type="submit">
+                            </label>
+                            <button
+                              class="button button--full-width button--primary"
+                              type="submit"
+                            >
+                              Save changes
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+                    <li class="accordion__item">
+                      <h3 class="accordion__title">
+                        <svg width="26" height="20">
+                          <use
+                            xlink:href="images/sprite.svg#payment-card-icon"
+                          ></use>
+                        </svg>
+                        Billing Profile
+                      </h3>
+                      <div class="accordion__content">
+                        <form class="user-credit-card-form">
+                          <div class="credit-card">
+                            <div class="credit-card__frontside">
+                              <div class="credit-card__frontside-top-wrap">
+                                <img
+                                  src="images/chip.svg"
+                                  alt="chip"
+                                  width="40"
+                                  height="27"
+                                />
+                                <img
+                                  src="images/mastercard.svg"
+                                  alt="mastercard"
+                                  width="42"
+                                  height="42"
+                                />
+                              </div>
+                              <div class="credit-card__frontside-number-wrap">
+                                <label class="field-text">
+                                  <span class="field-text__input-wrap">
+                                    <input
+                                      class="field-text__input"
+                                      type="text"
+                                      maxlength="4"
+                                    />
+                                  </span>
+                                </label>
+                                <label class="field-text">
+                                  <span class="field-text__input-wrap">
+                                    <input
+                                      class="field-text__input"
+                                      type="text"
+                                      maxlength="4"
+                                    />
+                                  </span>
+                                </label>
+                                <label class="field-text">
+                                  <span class="field-text__input-wrap">
+                                    <input
+                                      class="field-text__input"
+                                      type="text"
+                                      maxlength="4"
+                                    />
+                                  </span>
+                                </label>
+                                <label class="field-text">
+                                  <span class="field-text__input-wrap">
+                                    <input
+                                      class="field-text__input"
+                                      type="text"
+                                      maxlength="4"
+                                    />
+                                  </span>
+                                </label>
+                              </div>
+                              <div class="credit-card__frontside-bottom-wrap">
+                                <label class="field-text">
+                                  <span class="field-text__name"
+                                    >Cardholder Name</span
+                                  >
+                                  <span class="field-text__input-wrap">
+                                    <input
+                                      class="field-text__input"
+                                      type="text"
+                                    />
+                                  </span>
+                                </label>
+                                <label class="field-text">
+                                  <span class="field-text__name"
+                                    >Expiry Date</span
+                                  >
+                                  <span class="field-text__input-wrap">
+                                    <input
+                                      class="field-text__input"
+                                      type="text"
+                                      maxlength="5"
+                                    />
+                                  </span>
+                                </label>
+                              </div>
+                            </div>
+                            <div class="credit-card__backside">
+                              <div
+                                class="credit-card__backside-magnetic-stripe"
+                              ></div>
+                              <div class="credit-card__backside-cvv-wrap">
+                                <label class="field-text">
+                                  <span class="field-text__input-wrap">
+                                    <input
+                                      class="field-text__input"
+                                      type="text"
+                                      maxlength="3"
+                                    />
+                                  </span>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                          <button
+                            class="user-credit-card-form__submit-btn button button--full-width button--primary"
+                            type="submit"
+                          >
                             Save changes
                           </button>
-                        </div>
-                      </form>
-                    </div>
-                  </li>
-                  <li class="accordion__item">
-                    <h3 class="accordion__title">
-                      <svg width="26" height="20">
-                        <use xlink:href="images/sprite.svg#payment-card-icon">
-                        </use>
-                      </svg>
-                      Billing Profile
-                    </h3>
-                    <div class="accordion__content">
-                      <form class="user-credit-card-form">
-                        <div class="credit-card">
-                          <div class="credit-card__frontside">
-                            <div class="credit-card__frontside-top-wrap">
-                              <img src="images/chip.svg" alt="chip" width="40" height="27">
-                              <img src="images/mastercard.svg" alt="mastercard" width="42" height="42">
-                            </div>
-                            <div class="credit-card__frontside-number-wrap">
-                              <label class="field-text">
-                                <span class="field-text__input-wrap">
-                                    <input class="field-text__input" type="text" maxlength="4">
-                                  </span>
-                              </label>
-                              <label class="field-text">
-                                <span class="field-text__input-wrap">
-                                    <input class="field-text__input" type="text" maxlength="4">
-                                  </span>
-                              </label>
-                              <label class="field-text">
-                                <span class="field-text__input-wrap">
-                                    <input class="field-text__input" type="text" maxlength="4">
-                                  </span>
-                              </label>
-                              <label class="field-text">
-                                <span class="field-text__input-wrap">
-                                    <input class="field-text__input" type="text" maxlength="4">
-                                  </span>
-                              </label>
-                            </div>
-                            <div class="credit-card__frontside-bottom-wrap">
-                              <label class="field-text">
-                                <span class="field-text__name">Cardholder Name</span>
-                                <span class="field-text__input-wrap">
-                                    <input class="field-text__input" type="text">
-                                  </span>
-                              </label>
-                              <label class="field-text">
-                                <span class="field-text__name">Expiry Date</span>
-                                <span class="field-text__input-wrap">
-                                    <input class="field-text__input" type="text" maxlength="5">
-                                  </span>
-                              </label>
-                            </div>
-                          </div>
-                          <div class="credit-card__backside">
-                            <div class="credit-card__backside-magnetic-stripe"></div>
-                            <div class="credit-card__backside-cvv-wrap">
-                              <label class="field-text">
-                                <span class="field-text__input-wrap">
-                                    <input class="field-text__input" type="text" maxlength="3">
-                                  </span>
-                              </label>
-                            </div>
-                          </div>
-                        </div>
-                        <button class="user-credit-card-form__submit-btn button button--full-width button--primary" type="submit">
-                          Save changes
-                        </button>
-                        <button class="user-credit-card-form__cancel-btn button button--full-width button--canceled" type="button">
-                          Cancel
-                        </button>
-                      </form>
-                    </div>
-                  </li>
-                  <li class="accordion__item">
-                    <h3 class="accordion__title">
-                      <svg width="24" height="24">
-                        <use xlink:href="images/sprite.svg#dollar-icon">
-                        </use>
-                      </svg>
-                      Billing History
-                    </h3>
-                    <div class="accordion__content">
-                      <table class="billing-history-table table-responsive">
-                        <thead>
-                          <tr>
-                            <th>Date</th>
-                            <th>Total</th>
-                            <th>Payment method</th>
-                            <th>Status</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr class="billing-history-table__item">
-                            <td class="billing-history-table__item-date" data-label="Date:">
-                              <time datetime="2022-02-26">02/26/2022</time>
-                            </td>
-                            <td class="billing-history-table__item-total" data-label="Total:">
-                              500$
-                            </td>
-                            <td class="billing-history-table__item-payment-method" data-label="Payment method:">
-                              Credit Card ending with 2705
-                            </td>
-                            <td class="billing-history-table__item-status-wrap" data-label="Status:">
-                              <div>
-                                <button class="billing-history-table__item-status button button--primary" type="button">
-                                  Paid
-                                </button>
-                                <button class="button" type="button">
-                                  View Invoice
-                                </button>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr class="billing-history-table__item">
-                            <td class="billing-history-table__item-date" data-label="Date:">
-                              <time datetime="2022-02-26">02/26/2022</time>
-                            </td>
-                            <td class="billing-history-table__item-total" data-label="Total:">
-                              500$
-                            </td>
-                            <td class="billing-history-table__item-payment-method" data-label="Payment method:">
-                              Credit Card ending with 2705
-                            </td>
-                            <td class="billing-history-table__item-status-wrap" data-label="Status:">
-                              <div>
-                                <button class="billing-history-table__item-status button button--primary" type="button">
-                                  Paid
-                                </button>
-                                <button class="button" type="button">
-                                  View Invoice
-                                </button>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr class="billing-history-table__item">
-                            <td class="billing-history-table__item-date" data-label="Date:">
-                              <time datetime="2022-02-26">02/26/2022</time>
-                            </td>
-                            <td class="billing-history-table__item-total" data-label="Total:">
-                              500$
-                            </td>
-                            <td class="billing-history-table__item-payment-method" data-label="Payment method:">
-                              Credit Card ending with 2705
-                            </td>
-                            <td class="billing-history-table__item-status-wrap" data-label="Status:">
-                              <div>
-                                <button class="billing-history-table__item-status button button--primary" type="button">
-                                  Paid
-                                </button>
-                                <button class="button" type="button">
-                                  View Invoice
-                                </button>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr class="billing-history-table__item">
-                            <td class="billing-history-table__item-date" data-label="Date:">
-                              <time datetime="2022-02-26">02/26/2022</time>
-                            </td>
-                            <td class="billing-history-table__item-total" data-label="Total:">
-                              500$
-                            </td>
-                            <td class="billing-history-table__item-payment-method" data-label="Payment method:">
-                              Credit Card ending with 2705
-                            </td>
-                            <td class="billing-history-table__item-status-wrap" data-label="Status:">
-                              <div>
-                                <button class="billing-history-table__item-status button button--primary" type="button">
-                                  Paid
-                                </button>
-                                <button class="button" type="button">
-                                  View Invoice
-                                </button>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr class="billing-history-table__item">
-                            <td class="billing-history-table__item-date" data-label="Date:">
-                              <time datetime="2022-02-26">02/26/2022</time>
-                            </td>
-                            <td class="billing-history-table__item-total" data-label="Total:">
-                              500$
-                            </td>
-                            <td class="billing-history-table__item-payment-method" data-label="Payment method:">
-                              Credit Card ending with 2705
-                            </td>
-                            <td class="billing-history-table__item-status-wrap" data-label="Status:">
-                              <div>
-                                <button class="billing-history-table__item-status button button--primary" type="button">
-                                  Paid
-                                </button>
-                                <button class="button" type="button">
-                                  View Invoice
-                                </button>
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </li>
-                  <li class="accordion__item">
-                    <h3 class="accordion__title">
-                      <svg width="24" height="24">
-                        <use xlink:href="images/sprite.svg#storage-icon">
-                        </use>
-                      </svg>
-                      Work History
-                    </h3>
-                    <div class="accordion__content">
-                      <div class="tabs work-history-tabs">
-                        <ul class="tabs__links" role="tablist">
-                          <li class="tabs__link-wrap tabs__link-wrap--active" role="presentation">
-                            <a class="tabs__link" href="#pick_up_tab_03" data-toggle="tab" role="tab">
-                              Pick ups
-                            </a>
-                          </li>
-                          <li class="tabs__link-wrap" role="presentation">
-                            <a class="tabs__link" href="#cf_tab_04" data-toggle="tab" role="tab">
-                              Cubic feets
-                            </a>
-                          </li>
-                        </ul>
-                        <div class="tabs__content-wrapper">
-                          <div class="tabs__content-item tabs__content-item--active" id="pick_up_tab_03" role="tabpanel">
-                            <table class="table-responsive work-history-table">
-                              <thead>
-                                <tr>
-                                  <th>Move Date</th>
-                                  <th>Moving From</th>
-                                  <th>Moving To</th>
-                                  <th>CF</th>
-                                  <th>Lbs</th>
-                                  <th>Miles</th>
-                                  <th>Estimate</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr class="work-history-table__item">
-                                  <td class="work-history-table__item-move-date" data-label="Move Date:">
-                                    <span>
-                                        <time datetime="2022-02-26">02/26/2022</time>
-                                        <br>
-                                        <time datetime="2022-02-27">02/27/2022</time>
+                          <button
+                            class="user-credit-card-form__cancel-btn button button--full-width button--canceled"
+                            type="button"
+                          >
+                            Cancel
+                          </button>
+                        </form>
+                      </div>
+                    </li>
+                    <li class="accordion__item">
+                      <h3 class="accordion__title">
+                        <svg width="24" height="24">
+                          <use xlink:href="images/sprite.svg#dollar-icon"></use>
+                        </svg>
+                        Billing History
+                      </h3>
+                      <div class="accordion__content">
+                        <table class="billing-history-table table-responsive">
+                          <thead>
+                            <tr>
+                              <th>Date</th>
+                              <th>Total</th>
+                              <th>Payment method</th>
+                              <th>Status</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="billing-history-table__item">
+                              <td
+                                class="billing-history-table__item-date"
+                                data-label="Date:"
+                              >
+                                <time datetime="2022-02-26">02/26/2022</time>
+                              </td>
+                              <td
+                                class="billing-history-table__item-total"
+                                data-label="Total:"
+                              >
+                                500$
+                              </td>
+                              <td
+                                class="billing-history-table__item-payment-method"
+                                data-label="Payment method:"
+                              >
+                                Credit Card ending with 2705
+                              </td>
+                              <td
+                                class="billing-history-table__item-status-wrap"
+                                data-label="Status:"
+                              >
+                                <div>
+                                  <button
+                                    class="billing-history-table__item-status button button--primary"
+                                    type="button"
+                                  >
+                                    Paid
+                                  </button>
+                                  <button class="button" type="button">
+                                    View Invoice
+                                  </button>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr class="billing-history-table__item">
+                              <td
+                                class="billing-history-table__item-date"
+                                data-label="Date:"
+                              >
+                                <time datetime="2022-02-26">02/26/2022</time>
+                              </td>
+                              <td
+                                class="billing-history-table__item-total"
+                                data-label="Total:"
+                              >
+                                500$
+                              </td>
+                              <td
+                                class="billing-history-table__item-payment-method"
+                                data-label="Payment method:"
+                              >
+                                Credit Card ending with 2705
+                              </td>
+                              <td
+                                class="billing-history-table__item-status-wrap"
+                                data-label="Status:"
+                              >
+                                <div>
+                                  <button
+                                    class="billing-history-table__item-status button button--primary"
+                                    type="button"
+                                  >
+                                    Paid
+                                  </button>
+                                  <button class="button" type="button">
+                                    View Invoice
+                                  </button>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr class="billing-history-table__item">
+                              <td
+                                class="billing-history-table__item-date"
+                                data-label="Date:"
+                              >
+                                <time datetime="2022-02-26">02/26/2022</time>
+                              </td>
+                              <td
+                                class="billing-history-table__item-total"
+                                data-label="Total:"
+                              >
+                                500$
+                              </td>
+                              <td
+                                class="billing-history-table__item-payment-method"
+                                data-label="Payment method:"
+                              >
+                                Credit Card ending with 2705
+                              </td>
+                              <td
+                                class="billing-history-table__item-status-wrap"
+                                data-label="Status:"
+                              >
+                                <div>
+                                  <button
+                                    class="billing-history-table__item-status button button--primary"
+                                    type="button"
+                                  >
+                                    Paid
+                                  </button>
+                                  <button class="button" type="button">
+                                    View Invoice
+                                  </button>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr class="billing-history-table__item">
+                              <td
+                                class="billing-history-table__item-date"
+                                data-label="Date:"
+                              >
+                                <time datetime="2022-02-26">02/26/2022</time>
+                              </td>
+                              <td
+                                class="billing-history-table__item-total"
+                                data-label="Total:"
+                              >
+                                500$
+                              </td>
+                              <td
+                                class="billing-history-table__item-payment-method"
+                                data-label="Payment method:"
+                              >
+                                Credit Card ending with 2705
+                              </td>
+                              <td
+                                class="billing-history-table__item-status-wrap"
+                                data-label="Status:"
+                              >
+                                <div>
+                                  <button
+                                    class="billing-history-table__item-status button button--primary"
+                                    type="button"
+                                  >
+                                    Paid
+                                  </button>
+                                  <button class="button" type="button">
+                                    View Invoice
+                                  </button>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr class="billing-history-table__item">
+                              <td
+                                class="billing-history-table__item-date"
+                                data-label="Date:"
+                              >
+                                <time datetime="2022-02-26">02/26/2022</time>
+                              </td>
+                              <td
+                                class="billing-history-table__item-total"
+                                data-label="Total:"
+                              >
+                                500$
+                              </td>
+                              <td
+                                class="billing-history-table__item-payment-method"
+                                data-label="Payment method:"
+                              >
+                                Credit Card ending with 2705
+                              </td>
+                              <td
+                                class="billing-history-table__item-status-wrap"
+                                data-label="Status:"
+                              >
+                                <div>
+                                  <button
+                                    class="billing-history-table__item-status button button--primary"
+                                    type="button"
+                                  >
+                                    Paid
+                                  </button>
+                                  <button class="button" type="button">
+                                    View Invoice
+                                  </button>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </li>
+                    <li class="accordion__item">
+                      <h3 class="accordion__title">
+                        <svg width="24" height="24">
+                          <use
+                            xlink:href="images/sprite.svg#storage-icon"
+                          ></use>
+                        </svg>
+                        Work History
+                      </h3>
+                      <div class="accordion__content">
+                        <div class="tabs work-history-tabs">
+                          <ul class="tabs__links" role="tablist">
+                            <li
+                              class="tabs__link-wrap tabs__link-wrap--active"
+                              role="presentation"
+                            >
+                              <a
+                                class="tabs__link"
+                                href="#pick_up_tab_03"
+                                data-toggle="tab"
+                                role="tab"
+                              >
+                                Pick ups
+                              </a>
+                            </li>
+                            <li class="tabs__link-wrap" role="presentation">
+                              <a
+                                class="tabs__link"
+                                href="#cf_tab_04"
+                                data-toggle="tab"
+                                role="tab"
+                              >
+                                Cubic feets
+                              </a>
+                            </li>
+                          </ul>
+                          <div class="tabs__content-wrapper">
+                            <div
+                              class="tabs__content-item tabs__content-item--active"
+                              id="pick_up_tab_03"
+                              role="tabpanel"
+                            >
+                              <table
+                                class="table-responsive work-history-table"
+                              >
+                                <thead>
+                                  <tr>
+                                    <th>Move Date</th>
+                                    <th>Moving From</th>
+                                    <th>Moving To</th>
+                                    <th>CF</th>
+                                    <th>Lbs</th>
+                                    <th>Miles</th>
+                                    <th>Estimate</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr class="work-history-table__item">
+                                    <td
+                                      class="work-history-table__item-move-date"
+                                      data-label="Move Date:"
+                                    >
+                                      <span>
+                                        <time datetime="2022-02-26"
+                                          >02/26/2022</time
+                                        >
+                                        <br />
+                                        <time datetime="2022-02-27"
+                                          >02/27/2022</time
+                                        >
                                       </span>
-                                  </td>
-                                  <td class="work-history-table__item-moving-from" data-label="Moving From:">
-                                    <div>
-                                      <span>Portland</span>,
-                                      <span>OR</span>
-                                      <br>
-                                      <span>97225</span>
-                                    </div>
-                                  </td>
-                                  <td class="work-history-table__item-moving-to" data-label="Moving To:">
-                                    <div>
-                                      <span>Windsor</span>,
-                                      <span>CT</span>
-                                      <br>
-                                      <span>06095</span>
-                                    </div>
-                                  </td>
-                                  <td class="work-history-table__item-cf" data-label="Cf:">
-                                    <span>351 cf</span>
-                                  </td>
-                                  <td class="work-history-table__item-miles" data-label="Miles:">
-                                    <span>1865 lbs</span>
-                                  </td>
-                                  <td class="work-history-table__item-lbs" data-label="Lbs:">
-                                    <span>2457</span>
-                                  </td>
-                                  <td class="work-history-table__item-estimate" data-label="Estimate:">
-                                    <span>2.275.70 $</span>
-                                  </td>
-                                </tr>
-                                <tr class="work-history-table__item">
-                                  <td class="work-history-table__item-move-date" data-label="Move Date:">
-                                    <span>
-                                        <time datetime="2022-02-26">02/26/2022</time>
-                                        <br>
-                                        <time datetime="2022-02-27">02/27/2022</time>
+                                    </td>
+                                    <td
+                                      class="work-history-table__item-moving-from"
+                                      data-label="Moving From:"
+                                    >
+                                      <div>
+                                        <span>Portland</span>,
+                                        <span>OR</span>
+                                        <br />
+                                        <span>97225</span>
+                                      </div>
+                                    </td>
+                                    <td
+                                      class="work-history-table__item-moving-to"
+                                      data-label="Moving To:"
+                                    >
+                                      <div>
+                                        <span>Windsor</span>,
+                                        <span>CT</span>
+                                        <br />
+                                        <span>06095</span>
+                                      </div>
+                                    </td>
+                                    <td
+                                      class="work-history-table__item-cf"
+                                      data-label="Cf:"
+                                    >
+                                      <span>351 cf</span>
+                                    </td>
+                                    <td
+                                      class="work-history-table__item-miles"
+                                      data-label="Miles:"
+                                    >
+                                      <span>1865 lbs</span>
+                                    </td>
+                                    <td
+                                      class="work-history-table__item-lbs"
+                                      data-label="Lbs:"
+                                    >
+                                      <span>2457</span>
+                                    </td>
+                                    <td
+                                      class="work-history-table__item-estimate"
+                                      data-label="Estimate:"
+                                    >
+                                      <span>2.275.70 $</span>
+                                    </td>
+                                  </tr>
+                                  <tr class="work-history-table__item">
+                                    <td
+                                      class="work-history-table__item-move-date"
+                                      data-label="Move Date:"
+                                    >
+                                      <span>
+                                        <time datetime="2022-02-26"
+                                          >02/26/2022</time
+                                        >
+                                        <br />
+                                        <time datetime="2022-02-27"
+                                          >02/27/2022</time
+                                        >
                                       </span>
-                                  </td>
-                                  <td class="work-history-table__item-moving-from" data-label="Moving From:">
-                                    <div>
-                                      <span>Portland</span>,
-                                      <span>OR</span>
-                                      <br>
-                                      <span>97225</span>
-                                    </div>
-                                  </td>
-                                  <td class="work-history-table__item-moving-to" data-label="Moving To:">
-                                    <div>
-                                      <span>Windsor</span>,
-                                      <span>CT</span>
-                                      <br>
-                                      <span>06095</span>
-                                    </div>
-                                  </td>
-                                  <td class="work-history-table__item-cf" data-label="Cf:">
-                                    <span>351 cf</span>
-                                  </td>
-                                  <td class="work-history-table__item-miles" data-label="Miles:">
-                                    <span>1865 lbs</span>
-                                  </td>
-                                  <td class="work-history-table__item-lbs" data-label="Lbs:">
-                                    <span>2457</span>
-                                  </td>
-                                  <td class="work-history-table__item-estimate" data-label="Estimate:">
-                                    <span>2.275.70 $</span>
-                                  </td>
-                                </tr>
-                                <tr class="work-history-table__item">
-                                  <td class="work-history-table__item-move-date" data-label="Move Date:">
-                                    <span>
-                                        <time datetime="2022-02-26">02/26/2022</time>
-                                        <br>
-                                        <time datetime="2022-02-27">02/27/2022</time>
+                                    </td>
+                                    <td
+                                      class="work-history-table__item-moving-from"
+                                      data-label="Moving From:"
+                                    >
+                                      <div>
+                                        <span>Portland</span>,
+                                        <span>OR</span>
+                                        <br />
+                                        <span>97225</span>
+                                      </div>
+                                    </td>
+                                    <td
+                                      class="work-history-table__item-moving-to"
+                                      data-label="Moving To:"
+                                    >
+                                      <div>
+                                        <span>Windsor</span>,
+                                        <span>CT</span>
+                                        <br />
+                                        <span>06095</span>
+                                      </div>
+                                    </td>
+                                    <td
+                                      class="work-history-table__item-cf"
+                                      data-label="Cf:"
+                                    >
+                                      <span>351 cf</span>
+                                    </td>
+                                    <td
+                                      class="work-history-table__item-miles"
+                                      data-label="Miles:"
+                                    >
+                                      <span>1865 lbs</span>
+                                    </td>
+                                    <td
+                                      class="work-history-table__item-lbs"
+                                      data-label="Lbs:"
+                                    >
+                                      <span>2457</span>
+                                    </td>
+                                    <td
+                                      class="work-history-table__item-estimate"
+                                      data-label="Estimate:"
+                                    >
+                                      <span>2.275.70 $</span>
+                                    </td>
+                                  </tr>
+                                  <tr class="work-history-table__item">
+                                    <td
+                                      class="work-history-table__item-move-date"
+                                      data-label="Move Date:"
+                                    >
+                                      <span>
+                                        <time datetime="2022-02-26"
+                                          >02/26/2022</time
+                                        >
+                                        <br />
+                                        <time datetime="2022-02-27"
+                                          >02/27/2022</time
+                                        >
                                       </span>
-                                  </td>
-                                  <td class="work-history-table__item-moving-from" data-label="Moving From:">
-                                    <div>
-                                      <span>Portland</span>,
-                                      <span>OR</span>
-                                      <br>
-                                      <span>97225</span>
-                                    </div>
-                                  </td>
-                                  <td class="work-history-table__item-moving-to" data-label="Moving To:">
-                                    <div>
-                                      <span>Windsor</span>,
-                                      <span>CT</span>
-                                      <br>
-                                      <span>06095</span>
-                                    </div>
-                                  </td>
-                                  <td class="work-history-table__item-cf" data-label="Cf:">
-                                    <span>351 cf</span>
-                                  </td>
-                                  <td class="work-history-table__item-miles" data-label="Miles:">
-                                    <span>1865 lbs</span>
-                                  </td>
-                                  <td class="work-history-table__item-lbs" data-label="Lbs:">
-                                    <span>2457</span>
-                                  </td>
-                                  <td class="work-history-table__item-estimate" data-label="Estimate:">
-                                    <span>2.275.70 $</span>
-                                  </td>
-                                </tr>
-                                <tr class="work-history-table__item">
-                                  <td class="work-history-table__item-move-date" data-label="Move Date:">
-                                    <span>
-                                        <time datetime="2022-02-26">02/26/2022</time>
-                                        <br>
-                                        <time datetime="2022-02-27">02/27/2022</time>
+                                    </td>
+                                    <td
+                                      class="work-history-table__item-moving-from"
+                                      data-label="Moving From:"
+                                    >
+                                      <div>
+                                        <span>Portland</span>,
+                                        <span>OR</span>
+                                        <br />
+                                        <span>97225</span>
+                                      </div>
+                                    </td>
+                                    <td
+                                      class="work-history-table__item-moving-to"
+                                      data-label="Moving To:"
+                                    >
+                                      <div>
+                                        <span>Windsor</span>,
+                                        <span>CT</span>
+                                        <br />
+                                        <span>06095</span>
+                                      </div>
+                                    </td>
+                                    <td
+                                      class="work-history-table__item-cf"
+                                      data-label="Cf:"
+                                    >
+                                      <span>351 cf</span>
+                                    </td>
+                                    <td
+                                      class="work-history-table__item-miles"
+                                      data-label="Miles:"
+                                    >
+                                      <span>1865 lbs</span>
+                                    </td>
+                                    <td
+                                      class="work-history-table__item-lbs"
+                                      data-label="Lbs:"
+                                    >
+                                      <span>2457</span>
+                                    </td>
+                                    <td
+                                      class="work-history-table__item-estimate"
+                                      data-label="Estimate:"
+                                    >
+                                      <span>2.275.70 $</span>
+                                    </td>
+                                  </tr>
+                                  <tr class="work-history-table__item">
+                                    <td
+                                      class="work-history-table__item-move-date"
+                                      data-label="Move Date:"
+                                    >
+                                      <span>
+                                        <time datetime="2022-02-26"
+                                          >02/26/2022</time
+                                        >
+                                        <br />
+                                        <time datetime="2022-02-27"
+                                          >02/27/2022</time
+                                        >
                                       </span>
-                                  </td>
-                                  <td class="work-history-table__item-moving-from" data-label="Moving From:">
-                                    <div>
-                                      <span>Portland</span>,
-                                      <span>OR</span>
-                                      <br>
-                                      <span>97225</span>
-                                    </div>
-                                  </td>
-                                  <td class="work-history-table__item-moving-to" data-label="Moving To:">
-                                    <div>
-                                      <span>Windsor</span>,
-                                      <span>CT</span>
-                                      <br>
-                                      <span>06095</span>
-                                    </div>
-                                  </td>
-                                  <td class="work-history-table__item-cf" data-label="Cf:">
-                                    <span>351 cf</span>
-                                  </td>
-                                  <td class="work-history-table__item-miles" data-label="Miles:">
-                                    <span>1865 lbs</span>
-                                  </td>
-                                  <td class="work-history-table__item-lbs" data-label="Lbs:">
-                                    <span>2457</span>
-                                  </td>
-                                  <td class="work-history-table__item-estimate" data-label="Estimate:">
-                                    <span>2.275.70 $</span>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                          <div class="tabs__content-item" id="cf_tab_04" role="tabpanel">
-                            <table class="table-responsive work-history-table work-history-table--cf">
-                              <thead>
-                                <tr>
-                                  <th>Moving From</th>
-                                  <th>Moving To</th>
-                                  <th>CF</th>
-                                  <th>Zip code</th>
-                                  <th>Contact</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr class="work-history-table__item">
-                                  <td class="work-history-table__item-moving-from" data-label="Moving From:">
-                                    Portland, OR<br>97225
-                                  </td>
-                                  <td class="work-history-table__item-moving-to" data-label="Moving to:">
-                                    Windsor, CT<br>06095
-                                  </td>
-                                  <td class="work-history-table__item-cf" data-label="Cf:">
-                                    351 cf
-                                  </td>
-                                  <td class="work-history-table__item-zip-code" data-label="Zip code:">
-                                    32456
-                                  </td>
-                                  <td class="work-history-table__item-contact" data-label="Contact:">
-                                    +38003 435-34-27
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
+                                    </td>
+                                    <td
+                                      class="work-history-table__item-moving-from"
+                                      data-label="Moving From:"
+                                    >
+                                      <div>
+                                        <span>Portland</span>,
+                                        <span>OR</span>
+                                        <br />
+                                        <span>97225</span>
+                                      </div>
+                                    </td>
+                                    <td
+                                      class="work-history-table__item-moving-to"
+                                      data-label="Moving To:"
+                                    >
+                                      <div>
+                                        <span>Windsor</span>,
+                                        <span>CT</span>
+                                        <br />
+                                        <span>06095</span>
+                                      </div>
+                                    </td>
+                                    <td
+                                      class="work-history-table__item-cf"
+                                      data-label="Cf:"
+                                    >
+                                      <span>351 cf</span>
+                                    </td>
+                                    <td
+                                      class="work-history-table__item-miles"
+                                      data-label="Miles:"
+                                    >
+                                      <span>1865 lbs</span>
+                                    </td>
+                                    <td
+                                      class="work-history-table__item-lbs"
+                                      data-label="Lbs:"
+                                    >
+                                      <span>2457</span>
+                                    </td>
+                                    <td
+                                      class="work-history-table__item-estimate"
+                                      data-label="Estimate:"
+                                    >
+                                      <span>2.275.70 $</span>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <div
+                              class="tabs__content-item"
+                              id="cf_tab_04"
+                              role="tabpanel"
+                            >
+                              <table
+                                class="table-responsive work-history-table work-history-table--cf"
+                              >
+                                <thead>
+                                  <tr>
+                                    <th>Moving From</th>
+                                    <th>Moving To</th>
+                                    <th>CF</th>
+                                    <th>Zip code</th>
+                                    <th>Contact</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr class="work-history-table__item">
+                                    <td
+                                      class="work-history-table__item-moving-from"
+                                      data-label="Moving From:"
+                                    >
+                                      Portland, OR<br />97225
+                                    </td>
+                                    <td
+                                      class="work-history-table__item-moving-to"
+                                      data-label="Moving to:"
+                                    >
+                                      Windsor, CT<br />06095
+                                    </td>
+                                    <td
+                                      class="work-history-table__item-cf"
+                                      data-label="Cf:"
+                                    >
+                                      351 cf
+                                    </td>
+                                    <td
+                                      class="work-history-table__item-zip-code"
+                                      data-label="Zip code:"
+                                    >
+                                      32456
+                                    </td>
+                                    <td
+                                      class="work-history-table__item-contact"
+                                      data-label="Contact:"
+                                    >
+                                      +38003 435-34-27
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </li>
-                  <li class="accordion__item">
-                    <h3 class="accordion__title">
-                      <svg width="24" height="24">
-                        <use xlink:href="images/sprite.svg#key-icon">
-                        </use>
-                      </svg>
-                      Reset Password
-                    </h3>
-                    <div class="accordion__content">
-                      <form class="reset-password-form">
-                        <h2 class="reset-password-form__title">Reset Password</h2>
-                        <p class="reset-password-form__descr">If you forgot account password, you can set up a new password right now.</p>
-                        <div class="reset-password-form__fields-wrap">
-                          <label class="field-text">
-                            <span class="field-text__name">New password</span>
-                            <span class="field-text__input-wrap">
-                                <input class="field-text__input" type="text" placeholder="Enter new password">
+                    </li>
+                    <li class="accordion__item">
+                      <h3 class="accordion__title">
+                        <svg width="24" height="24">
+                          <use xlink:href="images/sprite.svg#key-icon"></use>
+                        </svg>
+                        Reset Password
+                      </h3>
+                      <div class="accordion__content">
+                        <form class="reset-password-form">
+                          <h2 class="reset-password-form__title">
+                            Reset Password
+                          </h2>
+                          <p class="reset-password-form__descr">
+                            If you forgot account password, you can set up a new
+                            password right now.
+                          </p>
+                          <div class="reset-password-form__fields-wrap">
+                            <label class="field-text">
+                              <span class="field-text__name">New password</span>
+                              <span class="field-text__input-wrap">
+                                <input
+                                  class="field-text__input"
+                                  type="text"
+                                  placeholder="Enter new password"
+                                />
                               </span>
-                          </label>
-                          <label class="field-text">
-                            <span class="field-text__name">Repeat new password</span>
-                            <span class="field-text__input-wrap">
-                                <input class="field-text__input" type="text" placeholder="Repeat new password">
+                            </label>
+                            <label class="field-text">
+                              <span class="field-text__name"
+                                >Repeat new password</span
+                              >
+                              <span class="field-text__input-wrap">
+                                <input
+                                  class="field-text__input"
+                                  type="text"
+                                  placeholder="Repeat new password"
+                                />
                               </span>
-                          </label>
-                          <button class="button button--full-width button--primary" type="submit">
-                            Save
+                            </label>
+                            <button
+                              class="button button--full-width button--primary"
+                              type="submit"
+                            >
+                              Save
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+                  </ul>
+                  <form class="user-edit-form">
+                    <h2 class="user-edit-form__title">Personal Information</h2>
+                    <div class="user-edit-form__top-wrap">
+                      <label class="user-edit-form__avatar-file-upload">
+                        <input type="file" />
+                        SI
+                      </label>
+                      <div>
+                        <div class="user-edit-form__fullname">
+                          <span>Sudenko Igor</span>
+                          <button
+                            class="user-edit-form__edit-btn"
+                            type="button"
+                          >
+                            <svg width="14" height="14">
+                              <use
+                                xlink:href="images/sprite.svg#edit-icon"
+                              ></use>
+                            </svg>
                           </button>
                         </div>
-                      </form>
-                    </div>
-                  </li>
-                </ul>
-                <form class="user-edit-form">
-                  <h2 class="user-edit-form__title">Personal Information</h2>
-                  <div class="user-edit-form__top-wrap">
-                    <label class="user-edit-form__avatar-file-upload">
-                      <input type="file">
-                      SI
-                    </label>
-                    <div>
-                      <div class="user-edit-form__fullname">
-                        <span>Sudenko Igor</span>
-                        <button class="user-edit-form__edit-btn" type="button">
-                          <svg width="14" height="14">
-                            <use xlink:href="images/sprite.svg#edit-icon">
-                            </use>
-                          </svg>
-                        </button>
+                        <div class="user-edit-form__phone">+380 939416589</div>
                       </div>
-                      <div class="user-edit-form__phone">+380 939416589</div>
                     </div>
-                  </div>
-                  <div class="user-edit-form__fields-wrap">
-                    <label class="field-text">
-                      <span class="field-text__name">First name</span>
-                      <span class="field-text__input-wrap">
-                          <input class="field-text__input" type="text">
+                    <div class="user-edit-form__fields-wrap">
+                      <label class="field-text">
+                        <span class="field-text__name">First name</span>
+                        <span class="field-text__input-wrap">
+                          <input class="field-text__input" type="text" />
                         </span>
-                    </label>
-                    <label class="field-text">
-                      <span class="field-text__name">Last name</span>
-                      <span class="field-text__input-wrap">
-                          <input class="field-text__input" type="text">
+                      </label>
+                      <label class="field-text">
+                        <span class="field-text__name">Last name</span>
+                        <span class="field-text__input-wrap">
+                          <input class="field-text__input" type="text" />
                         </span>
-                    </label>
-                    <label class="field-text">
-                      <span class="field-text__name">Phone</span>
-                      <span class="field-text__input-wrap">
-                          <input class="field-text__input" type="text">
+                      </label>
+                      <label class="field-text">
+                        <span class="field-text__name">Phone</span>
+                        <span class="field-text__input-wrap">
+                          <input class="field-text__input" type="text" />
                         </span>
-                    </label>
-                    <label class="field-text">
-                      <span class="field-text__name">Email</span>
-                      <span class="field-text__input-wrap">
-                          <input class="field-text__input" type="text">
+                      </label>
+                      <label class="field-text">
+                        <span class="field-text__name">Email</span>
+                        <span class="field-text__input-wrap">
+                          <input class="field-text__input" type="text" />
                         </span>
-                    </label>
-                    <label class="field-text">
-                      <span class="field-text__name">Company name</span>
-                      <span class="field-text__input-wrap">
-                          <input class="field-text__input" type="text" placeholder="(optional)">
+                      </label>
+                      <label class="field-text">
+                        <span class="field-text__name">Company name</span>
+                        <span class="field-text__input-wrap">
+                          <input
+                            class="field-text__input"
+                            type="text"
+                            placeholder="(optional)"
+                          />
                         </span>
-                    </label>
-                    <button class="button button--full-width button--primary" type="submit">
-                      Save changes
-                    </button>
-                  </div>
-                </form>
+                      </label>
+                      <button
+                        class="button button--full-width button--primary"
+                        type="submit"
+                      >
+                        Save changes
+                      </button>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </main>
-    </div>
-    <div class="page__footer-wrap">
-      <footer class="page-footer">
-        <div class="page-footer__top">
-          <div class="container">
-            <div class="page-footer__top-inner">
-              <div class="page-footer__top-item">
-                <a class="logo" href="/">
-                  <img src="images/logo.svg" alt="logotype">
-                </a>
+        </main>
+      </div>
+      <div class="page__footer-wrap">
+        <footer class="page-footer">
+          <div class="page-footer__top">
+            <div class="container">
+              <div class="page-footer__top-inner">
+                <div class="page-footer__top-item">
+                  <a class="logo" href="/">
+                    <img src="images/logo.svg" alt="logotype" />
+                  </a>
 
-                <div class="footer-social-links">
-                  <p>
-                    Any questions? <br>
-              Contact us on Telegram or WhatsApp <br> and we will help you directly.
-                  </p>
-                  <ul class="social">
-                    <li class="social__link-wrap  social__link-wrap--telegram" title="Telegram">
-                      <a class="social__link" href="#" aria-label="open telegram">
-                        <svg width="13" height="11">
-                          <use xlink:href="images/sprite.svg#telegram-icon">
-                          </use>
-                        </svg>
+                  <div class="footer-social-links">
+                    <p>
+                      Any questions? <br />
+                      Contact us on Telegram or WhatsApp <br />
+                      and we will help you directly.
+                    </p>
+                    <ul class="social">
+                      <li
+                        class="social__link-wrap social__link-wrap--telegram"
+                        title="Telegram"
+                      >
+                        <a
+                          class="social__link"
+                          href="#"
+                          aria-label="open telegram"
+                        >
+                          <svg width="13" height="11">
+                            <use
+                              xlink:href="images/sprite.svg#telegram-icon"
+                            ></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li
+                        class="social__link-wrap social__link-wrap--whatsapp"
+                        title="WhatsApp"
+                      >
+                        <a
+                          class="social__link"
+                          href="#"
+                          aria-label="open whatsapp"
+                        >
+                          <svg width="13" height="11">
+                            <use
+                              xlink:href="images/sprite.svg#whatsapp-icon"
+                            ></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="page-footer__top-item">
+                  <h2 class="page-footer__top-item-title">Menu</h2>
+                  <ul class="page-footer-list">
+                    <li class="page-footer-list__item">
+                      <a class="page-footer-list__link" href="pick-ups.html">
+                        Pick ups
                       </a>
                     </li>
-                    <li class="social__link-wrap  social__link-wrap--whatsapp" title="WhatsApp">
-                      <a class="social__link" href="#" aria-label="open whatsapp">
-                        <svg width="13" height="11">
-                          <use xlink:href="images/sprite.svg#whatsapp-icon">
-                          </use>
-                        </svg>
+                    <li class="page-footer-list__item">
+                      <a class="page-footer-list__link" href="cubic-feets.html">
+                        Cf
+                      </a>
+                    </li>
+                    <li class="page-footer-list__item">
+                      <a
+                        class="page-footer-list__link"
+                        href="new-pick-up-post.html"
+                      >
+                        Post Pick up
+                      </a>
+                    </li>
+                    <li class="page-footer-list__item">
+                      <a class="page-footer-list__link" href="new-cf-post.html">
+                        Post Cf
+                      </a>
+                    </li>
+                    <li class="page-footer-list__item">
+                      <a class="page-footer-list__link" href="pricing.html">
+                        Pricing
+                      </a>
+                    </li>
+                    <li class="page-footer-list__item">
+                      <a class="page-footer-list__link" href="about.html">
+                        About us
+                      </a>
+                    </li>
+                    <li class="page-footer-list__item">
+                      <a class="page-footer-list__link" href="reviews.html">
+                        Reviews
+                      </a>
+                    </li>
+                    <li class="page-footer-list__item">
+                      <a
+                        class="page-footer-list__link"
+                        href="app-tutorial.html"
+                      >
+                        App Tutorial
+                      </a>
+                    </li>
+                    <li class="page-footer-list__item">
+                      <a class="page-footer-list__link" href="contact-us.html">
+                        Contact us
                       </a>
                     </li>
                   </ul>
                 </div>
-              </div>
-              <div class="page-footer__top-item">
-                <h2 class="page-footer__top-item-title">
-                  Menu
-                </h2>
-                <ul class="page-footer-list">
-                  <li class="page-footer-list__item">
-                    <a class="page-footer-list__link" href="pick-ups.html">
-                      Pick ups
-                    </a>
-                  </li>
-                  <li class="page-footer-list__item">
-                    <a class="page-footer-list__link" href="cubic-feets.html">
-                      Cf
-                    </a>
-                  </li>
-                  <li class="page-footer-list__item">
-                    <a class="page-footer-list__link" href="new-pick-up-post.html">
-                      Post Pick up
-                    </a>
-                  </li>
-                  <li class="page-footer-list__item">
-                    <a class="page-footer-list__link" href="new-cf-post.html">
-                      Post Cf
-                    </a>
-                  </li>
-                  <li class="page-footer-list__item">
-                    <a class="page-footer-list__link" href="pricing.html">
-                      Pricing
-                    </a>
-                  </li>
-                  <li class="page-footer-list__item">
-                    <a class="page-footer-list__link" href="about.html">
-                      About us
-                    </a>
-                  </li>
-                  <li class="page-footer-list__item">
-                    <a class="page-footer-list__link" href="reviews.html">
-                      Reviews
-                    </a>
-                  </li>
-                  <li class="page-footer-list__item">
-                    <a class="page-footer-list__link" href="app-tutorial.html">
-                      App Tutorial
-                    </a>
-                  </li>
-                  <li class="page-footer-list__item">
-                    <a class="page-footer-list__link" href="contact-us.html">
-                      Contact us
-                    </a>
-                  </li>
-                </ul>
 
+                <div class="page-footer__top-item">
+                  <h2 class="page-footer__top-item-title">Contacts</h2>
+                  <ul class="page-footer-list">
+                    <li class="page-footer-list__item">
+                      <svg width="11" height="17">
+                        <use xlink:href="images/sprite.svg#mobile-icon"></use>
+                      </svg>
+                      <a class="page-footer-list__link" href="tel:380502004030">
+                        +38 (050) 200 40 30
+                      </a>
+                    </li>
+                    <li class="page-footer-list__item">
+                      <svg width="15" height="11">
+                        <use xlink:href="images/sprite.svg#email-icon"></use>
+                      </svg>
+                      <a
+                        class="page-footer-list__link"
+                        href="mailto:info@a2b.taxi"
+                      >
+                        info@a2b.taxi
+                      </a>
+                    </li>
+                    <li class="page-footer-list__item">
+                      <svg width="17" height="17">
+                        <use xlink:href="images/sprite.svg#clock-icon"></use>
+                      </svg>
+                      24 / 7 / 365
+                    </li>
+                  </ul>
+                </div>
               </div>
-
-              <div class="page-footer__top-item">
-                <h2 class="page-footer__top-item-title">
-                  Contacts
-                </h2>
-                <ul class="page-footer-list">
-                  <li class="page-footer-list__item">
-                    <svg width="11" height="17">
-                      <use xlink:href="images/sprite.svg#mobile-icon"></use>
-                    </svg>
-                    <a class="page-footer-list__link" href="tel:380502004030">
-                      +38 (050) 200 40 30
+            </div>
+          </div>
+          <div class="page-footer__bottom">
+            <div class="container">
+              <div class="page-footer__bottom-inner">
+                <p class="page-footer__copyright-text">
+                  Copyright © 2021. All rights reserved
+                </p>
+                <ul class="payment-method-list">
+                  <li class="payment-method-list__item">
+                    <a
+                      class="payment-method-list__link"
+                      href="#"
+                      aria-label="master card link"
+                    >
+                      <svg width="29" height="21">
+                        <use
+                          xlink:href="images/sprite.svg#master-card-icon"
+                        ></use>
+                      </svg>
                     </a>
                   </li>
-                  <li class="page-footer-list__item">
-                    <svg width="15" height="11">
-                      <use xlink:href="images/sprite.svg#email-icon"></use>
-                    </svg>
-                    <a class="page-footer-list__link" href="mailto:info@a2b.taxi">
-                      info@a2b.taxi
+                  <li class="payment-method-list__item">
+                    <a
+                      class="payment-method-list__link"
+                      href="#"
+                      aria-label="visa card link"
+                    >
+                      <svg width="29" height="21">
+                        <use xlink:href="images/sprite.svg#visa-icon"></use>
+                      </svg>
                     </a>
                   </li>
-                  <li class="page-footer-list__item">
-                    <svg width="17" height="17">
-                      <use xlink:href="images/sprite.svg#clock-icon"></use>
-                    </svg>
-                    24 / 7 / 365
+                  <li class="payment-method-list__item">
+                    <a
+                      class="payment-method-list__link"
+                      href="#"
+                      aria-label="apple pay link"
+                    >
+                      <svg width="29" height="21">
+                        <use
+                          xlink:href="images/sprite.svg#apple-pay-icon"
+                        ></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
             </div>
-
           </div>
-        </div>
-        <div class="page-footer__bottom">
-          <div class="container">
-            <div class="page-footer__bottom-inner">
-              <p class="page-footer__copyright-text">
-                Copyright © 2021. All rights reserved
-              </p>
-              <ul class="payment-method-list">
-                <li class="payment-method-list__item">
-                  <a class="payment-method-list__link" href="#" aria-label="master card link">
-                    <svg width="29" height="21">
-                      <use xlink:href="images/sprite.svg#master-card-icon"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="payment-method-list__item">
-                  <a class="payment-method-list__link" href="#" aria-label="visa card link">
-                    <svg width="29" height="21">
-                      <use xlink:href="images/sprite.svg#visa-icon"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="payment-method-list__item">
-                  <a class="payment-method-list__link" href="#" aria-label="apple pay link">
-                    <svg width="29" height="21">
-                      <use xlink:href="images/sprite.svg#apple-pay-icon"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
+        </footer>
 
-      <a class="to-top to-top--visible" id="to-top" href="#">↑</a>
+        <a class="to-top to-top--visible" id="to-top" href="#">↑</a>
+      </div>
     </div>
-  </div>
-  <script src="js/vendors.js"></script>
-  <script src="js/main.js"></script>
-
-</body>
-
+    <script src="js/vendors.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

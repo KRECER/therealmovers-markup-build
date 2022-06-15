@@ -1,100 +1,129 @@
 <!DOCTYPE html>
 <html class="page no-js" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css">
+    <!-- Edge и ряд мобильных браузеров слишком умны. Отключим это. -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta name="format-detection" content="date=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta content="notranslate" name="google" />
 
-  <!-- Edge и ряд мобильных браузеров слишком умны. Отключим это. -->
-  <meta name="format-detection" content="telephone=no">
-  <meta name="format-detection" content="address=no">
-  <meta name="format-detection" content="date=no">
-  <meta name="format-detection" content="email=no">
-  <meta content="notranslate" name="google">
+    <!-- Предзагрузка шрифтов или иных ресурсов -->
+    <!-- <link rel="preload" href="fonts/Bloggersans.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
 
-  <!-- Предзагрузка шрифтов или иных ресурсов -->
-  <!-- <link rel="preload" href="fonts/Bloggersans.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>The Real Movers | Contact Us</title>
+  </head>
 
-  <title>The Real Movers | Contact Us</title>
-</head>
-
-<body>
-  <div class="mobile-menu" id="mobile-menu">
-    <div class="mobile-menu__backdrop" id="backdrop"></div>
-    <div class="mobile-menu__inner"></div>
-  </div>
-  <div class="page__inner">
-    <div class="page__content">
-      <header class="page-header">
-        <div class="container">
-          <div class="page-header__inner">
-            <a class="logo" href="/">
-              <img src="images/logo.svg" alt="logotype">
-            </a>
-
-            <nav class="main-nav" id="nav" data-da=".mobile-menu__inner,991,1">
-              <ul class="main-nav__list">
-                <li class="main-nav__item main-nav__item--has-child">
-                  <a class="main-nav__link" href="#">Board</a>
-                  <div class="main-nav__sublist-wrapper main-nav__sublist-wrapper--lvl-2">
-                    <ul class="main-nav__list main-nav__list--lvl-2">
-                      <li class="main-nav__item main-nav__item--lvl-2">
-                        <a class="main-nav__link main-nav__link--lvl-2" href="cubic-feets.html">Cubic feets</a>
-                      </li>
-                      <li class="main-nav__item main-nav__item--lvl-2">
-                        <a class="main-nav__link main-nav__link--lvl-2" href="pick-ups.html">Pick ups</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="main-nav__item main-nav__item--has-child">
-                  <a class="main-nav__link" href="#">Post job</a>
-                  <div class="main-nav__sublist-wrapper main-nav__sublist-wrapper--lvl-2">
-                    <ul class="main-nav__list main-nav__list--lvl-2">
-                      <li class="main-nav__item main-nav__item--lvl-2">
-                        <a class="main-nav__link main-nav__link--lvl-2" href="new-pick-up-post.html">Pick up</a>
-                      </li>
-                      <li class="main-nav__item main-nav__item--lvl-2">
-                        <a class="main-nav__link main-nav__link--lvl-2" href="new-cf-post.html">Cubic feet</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="pricing.html">Pricing</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="app-tutorial.html">App tutorial</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="about.html">About us</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="contact-us.html">Contact us</a>
-                </li>
-              </ul>
-            </nav>
-
-            <div class="auth-block" data-da=".mobile-menu__inner,991,3">
-              <a class="auth-block__link" href="#">
-                <svg width="12" height="14">
-                  <use xlink:href="images/sprite.svg#user-icon">
-                  </use>
-                </svg>
-                Log in
+  <body>
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu__backdrop" id="backdrop"></div>
+      <div class="mobile-menu__inner"></div>
+    </div>
+    <div class="page__inner">
+      <div class="page__content">
+        <header class="page-header">
+          <div class="container">
+            <div class="page-header__inner">
+              <a class="logo" href="index.html">
+                <img src="images/logo.svg" alt="logotype" />
               </a>
-              <a class="auth-block__link auth-block__link--accent" href="#">
-                Sign up
-              </a>
-            </div>
 
-            <!-- <div class="user-nav">
+              <nav
+                class="main-nav"
+                id="nav"
+                data-da=".mobile-menu__inner,991,1"
+              >
+                <ul class="main-nav__list">
+                  <li class="main-nav__item main-nav__item--has-child">
+                    <a class="main-nav__link" href="#">Board</a>
+                    <div
+                      class="main-nav__sublist-wrapper main-nav__sublist-wrapper--lvl-2"
+                    >
+                      <ul class="main-nav__list main-nav__list--lvl-2">
+                        <li class="main-nav__item main-nav__item--lvl-2">
+                          <a
+                            class="main-nav__link main-nav__link--lvl-2"
+                            href="cubic-feets.html"
+                            >Cubic feets</a
+                          >
+                        </li>
+                        <li class="main-nav__item main-nav__item--lvl-2">
+                          <a
+                            class="main-nav__link main-nav__link--lvl-2"
+                            href="pick-ups.html"
+                            >Pick ups</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="main-nav__item main-nav__item--has-child">
+                    <a class="main-nav__link" href="#">Post job</a>
+                    <div
+                      class="main-nav__sublist-wrapper main-nav__sublist-wrapper--lvl-2"
+                    >
+                      <ul class="main-nav__list main-nav__list--lvl-2">
+                        <li class="main-nav__item main-nav__item--lvl-2">
+                          <a
+                            class="main-nav__link main-nav__link--lvl-2"
+                            href="new-pick-up-post.html"
+                            >Pick up</a
+                          >
+                        </li>
+                        <li class="main-nav__item main-nav__item--lvl-2">
+                          <a
+                            class="main-nav__link main-nav__link--lvl-2"
+                            href="new-cf-post.html"
+                            >Cubic feet</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="pricing.html">Pricing</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="app-tutorial.html"
+                      >App tutorial</a
+                    >
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="about.html">About us</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="contact-us.html"
+                      >Contact us</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+
+              <div class="auth-block" data-da=".mobile-menu__inner,991,3">
+                <a class="auth-block__link" href="#">
+                  <svg width="12" height="14">
+                    <use xlink:href="images/sprite.svg#user-icon"></use>
+                  </svg>
+                  Log in
+                </a>
+                <a class="auth-block__link auth-block__link--accent" href="#">
+                  Sign up
+                </a>
+              </div>
+
+              <!-- <div class="user-nav">
           <div class="user-nav__info-wrap">
             <img src="images/user-thumbnail.jpeg" width="36" height="36" alt="user thumbnail" class="user-nav__thumbnail">
             <div class="user-nav__name">igor</div>
@@ -121,263 +150,319 @@
           </ul>
       </div> -->
 
-            <button class="burger" id="burger" data-target-id="mobile-menu" data-target-class-toggle="mobile-menu--opened" aria-label="mobile menu button">
-              <span></span>
-              <span></span>
-            </button>
-          </div>
-        </div>
-      </header>
-
-      <main class="page__main">
-        <div class="page-info">
-          <div class="container">
-            <div class="page-info__inner">
-              <ul class="breadcrumbs page-info__breadcrumbs" aria-label="Breadcrumb" role="navigation">
-                <li class="breadcrumbs__item"><a href="/">Home</a></li>
-                <li class="breadcrumbs__item"><span>Contact us</span></li>
-              </ul>
-              <h1 class="page-info__title">Contact us</h1>
+              <button
+                class="burger"
+                id="burger"
+                data-target-id="mobile-menu"
+                data-target-class-toggle="mobile-menu--opened"
+                aria-label="mobile menu button"
+              >
+                <span></span>
+                <span></span>
+              </button>
             </div>
           </div>
-        </div>
+        </header>
 
-        <section class="contact-us-details page-section">
-          <div class="container">
-            <div class="contact-us-details__inner">
-              <h2 class="visually-hidden">contact us</h2>
-              <div class="contact-us-details__info-wrap">
-                <p>
-                  Trust percentage to our customer is 101%. We will appreciate
-                  any feedback about the app working, our customer service, or
-                  any other reasons. We truly believe that a perfect product
-                  can be only built with a great customer experience.
-                </p>
-                <p>
-                  Don’t hesitate to contact us if you would like to see any
-                  function or a new feature in our app. This app was made by
-                  people for people, so we can guarantee you that every
-                  opinion has a matter for us. We will text / call you back
-                  within 24h.
-                </p>
-                <div class="contacts-block">
-                  <b class="contacts-block__title">You can:</b>
-                  <ul class="contacts-block__list">
-                    <li class="contacts-block__item">
-                      <span>Call or text us:</span>
-                      <a href="tel:3476081634">3476081634</a>
-                    </li>
-                    <li class="contacts-block__item">
-                      <span>Email us:</span>
-                      <a href="mailto:therealmoversteam@gmail.com">therealmoversteam@gmail.com</a>
-                    </li>
-                  </ul>
-                </div>
+        <main class="page__main">
+          <div class="page-info">
+            <div class="container">
+              <div class="page-info__inner">
+                <ul
+                  class="breadcrumbs page-info__breadcrumbs"
+                  aria-label="Breadcrumb"
+                  role="navigation"
+                >
+                  <li class="breadcrumbs__item">
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li class="breadcrumbs__item"><span>Contact us</span></li>
+                </ul>
+                <h1 class="page-info__title">Contact us</h1>
               </div>
-              <form class="feedback-form">
-                <h2 class="feedback-form__title">Write us</h2>
-                <div class="feedback-form__fields-wrap">
-                  <label class="field-text">
-                    <span class="field-text__name">Name</span>
-                    <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text">
+            </div>
+          </div>
+
+          <section class="contact-us-details page-section">
+            <div class="container">
+              <div class="contact-us-details__inner">
+                <h2 class="visually-hidden">contact us</h2>
+                <div class="contact-us-details__info-wrap">
+                  <p>
+                    Trust percentage to our customer is 101%. We will appreciate
+                    any feedback about the app working, our customer service, or
+                    any other reasons. We truly believe that a perfect product
+                    can be only built with a great customer experience.
+                  </p>
+                  <p>
+                    Don’t hesitate to contact us if you would like to see any
+                    function or a new feature in our app. This app was made by
+                    people for people, so we can guarantee you that every
+                    opinion has a matter for us. We will text / call you back
+                    within 24h.
+                  </p>
+                  <div class="contacts-block">
+                    <b class="contacts-block__title">You can:</b>
+                    <ul class="contacts-block__list">
+                      <li class="contacts-block__item">
+                        <span>Call or text us:</span>
+                        <a href="tel:3476081634">3476081634</a>
+                      </li>
+                      <li class="contacts-block__item">
+                        <span>Email us:</span>
+                        <a href="mailto:therealmoversteam@gmail.com"
+                          >therealmoversteam@gmail.com</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <form class="feedback-form">
+                  <h2 class="feedback-form__title">Write us</h2>
+                  <div class="feedback-form__fields-wrap">
+                    <label class="field-text">
+                      <span class="field-text__name">Name</span>
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" />
                       </span>
-                  </label>
-                  <label class="field-text">
-                    <span class="field-text__name">Email</span>
-                    <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text">
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__name">Email</span>
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" />
                       </span>
-                  </label>
-                  <label class="field-text">
-                    <span class="field-text__name">Phone</span>
-                    <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text">
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__name">Phone</span>
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" />
                       </span>
-                  </label>
-                  <label class="field-text">
-                    <span class="field-text__name">Message</span>
-                    <span class="field-text__input-wrap">
-                        <textarea class="field-text__input" name="test" rows="11" style="
+                    </label>
+                    <label class="field-text">
+                      <span class="field-text__name">Message</span>
+                      <span class="field-text__input-wrap">
+                        <textarea
+                          class="field-text__input"
+                          name="test"
+                          rows="11"
+                          style="
                             overflow: hidden;
                             overflow-wrap: break-word;
                             resize: none;
                             height: 40px;
-                          "></textarea>
+                          "
+                        ></textarea>
                       </span>
-                  </label>
-                </div>
-                <button class="button button--primary button--full-width" type="submit">
-                  Send
-                </button>
-              </form>
+                    </label>
+                  </div>
+                  <button
+                    class="button button--primary button--full-width"
+                    type="submit"
+                  >
+                    Send
+                  </button>
+                </form>
+              </div>
             </div>
-          </div>
-        </section>
-      </main>
-    </div>
-    <div class="page__footer-wrap">
-      <footer class="page-footer">
-        <div class="page-footer__top">
-          <div class="container">
-            <div class="page-footer__top-inner">
-              <div class="page-footer__top-item">
-                <a class="logo" href="/">
-                  <img src="images/logo.svg" alt="logotype">
-                </a>
+          </section>
+        </main>
+      </div>
+      <div class="page__footer-wrap">
+        <footer class="page-footer">
+          <div class="page-footer__top">
+            <div class="container">
+              <div class="page-footer__top-inner">
+                <div class="page-footer__top-item">
+                  <a class="logo" href="/">
+                    <img src="images/logo.svg" alt="logotype" />
+                  </a>
 
-                <div class="footer-social-links">
-                  <p>
-                    Any questions? <br>
-              Contact us on Telegram or WhatsApp <br> and we will help you directly.
-                  </p>
-                  <ul class="social">
-                    <li class="social__link-wrap  social__link-wrap--telegram" title="Telegram">
-                      <a class="social__link" href="#" aria-label="open telegram">
-                        <svg width="13" height="11">
-                          <use xlink:href="images/sprite.svg#telegram-icon">
-                          </use>
-                        </svg>
+                  <div class="footer-social-links">
+                    <p>
+                      Any questions? <br />
+                      Contact us on Telegram or WhatsApp <br />
+                      and we will help you directly.
+                    </p>
+                    <ul class="social">
+                      <li
+                        class="social__link-wrap social__link-wrap--telegram"
+                        title="Telegram"
+                      >
+                        <a
+                          class="social__link"
+                          href="#"
+                          aria-label="open telegram"
+                        >
+                          <svg width="13" height="11">
+                            <use
+                              xlink:href="images/sprite.svg#telegram-icon"
+                            ></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li
+                        class="social__link-wrap social__link-wrap--whatsapp"
+                        title="WhatsApp"
+                      >
+                        <a
+                          class="social__link"
+                          href="#"
+                          aria-label="open whatsapp"
+                        >
+                          <svg width="13" height="11">
+                            <use
+                              xlink:href="images/sprite.svg#whatsapp-icon"
+                            ></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="page-footer__top-item">
+                  <h2 class="page-footer__top-item-title">Menu</h2>
+                  <ul class="page-footer-list">
+                    <li class="page-footer-list__item">
+                      <a class="page-footer-list__link" href="pick-ups.html">
+                        Pick ups
                       </a>
                     </li>
-                    <li class="social__link-wrap  social__link-wrap--whatsapp" title="WhatsApp">
-                      <a class="social__link" href="#" aria-label="open whatsapp">
-                        <svg width="13" height="11">
-                          <use xlink:href="images/sprite.svg#whatsapp-icon">
-                          </use>
-                        </svg>
+                    <li class="page-footer-list__item">
+                      <a class="page-footer-list__link" href="cubic-feets.html">
+                        Cf
+                      </a>
+                    </li>
+                    <li class="page-footer-list__item">
+                      <a
+                        class="page-footer-list__link"
+                        href="new-pick-up-post.html"
+                      >
+                        Post Pick up
+                      </a>
+                    </li>
+                    <li class="page-footer-list__item">
+                      <a class="page-footer-list__link" href="new-cf-post.html">
+                        Post Cf
+                      </a>
+                    </li>
+                    <li class="page-footer-list__item">
+                      <a class="page-footer-list__link" href="pricing.html">
+                        Pricing
+                      </a>
+                    </li>
+                    <li class="page-footer-list__item">
+                      <a class="page-footer-list__link" href="about.html">
+                        About us
+                      </a>
+                    </li>
+                    <li class="page-footer-list__item">
+                      <a class="page-footer-list__link" href="reviews.html">
+                        Reviews
+                      </a>
+                    </li>
+                    <li class="page-footer-list__item">
+                      <a
+                        class="page-footer-list__link"
+                        href="app-tutorial.html"
+                      >
+                        App Tutorial
+                      </a>
+                    </li>
+                    <li class="page-footer-list__item">
+                      <a class="page-footer-list__link" href="contact-us.html">
+                        Contact us
                       </a>
                     </li>
                   </ul>
                 </div>
-              </div>
-              <div class="page-footer__top-item">
-                <h2 class="page-footer__top-item-title">
-                  Menu
-                </h2>
-                <ul class="page-footer-list">
-                  <li class="page-footer-list__item">
-                    <a class="page-footer-list__link" href="pick-ups.html">
-                      Pick ups
-                    </a>
-                  </li>
-                  <li class="page-footer-list__item">
-                    <a class="page-footer-list__link" href="cubic-feets.html">
-                      Cf
-                    </a>
-                  </li>
-                  <li class="page-footer-list__item">
-                    <a class="page-footer-list__link" href="new-pick-up-post.html">
-                      Post Pick up
-                    </a>
-                  </li>
-                  <li class="page-footer-list__item">
-                    <a class="page-footer-list__link" href="new-cf-post.html">
-                      Post Cf
-                    </a>
-                  </li>
-                  <li class="page-footer-list__item">
-                    <a class="page-footer-list__link" href="pricing.html">
-                      Pricing
-                    </a>
-                  </li>
-                  <li class="page-footer-list__item">
-                    <a class="page-footer-list__link" href="about.html">
-                      About us
-                    </a>
-                  </li>
-                  <li class="page-footer-list__item">
-                    <a class="page-footer-list__link" href="reviews.html">
-                      Reviews
-                    </a>
-                  </li>
-                  <li class="page-footer-list__item">
-                    <a class="page-footer-list__link" href="app-tutorial.html">
-                      App Tutorial
-                    </a>
-                  </li>
-                  <li class="page-footer-list__item">
-                    <a class="page-footer-list__link" href="contact-us.html">
-                      Contact us
-                    </a>
-                  </li>
-                </ul>
 
+                <div class="page-footer__top-item">
+                  <h2 class="page-footer__top-item-title">Contacts</h2>
+                  <ul class="page-footer-list">
+                    <li class="page-footer-list__item">
+                      <svg width="11" height="17">
+                        <use xlink:href="images/sprite.svg#mobile-icon"></use>
+                      </svg>
+                      <a class="page-footer-list__link" href="tel:380502004030">
+                        +38 (050) 200 40 30
+                      </a>
+                    </li>
+                    <li class="page-footer-list__item">
+                      <svg width="15" height="11">
+                        <use xlink:href="images/sprite.svg#email-icon"></use>
+                      </svg>
+                      <a
+                        class="page-footer-list__link"
+                        href="mailto:info@a2b.taxi"
+                      >
+                        info@a2b.taxi
+                      </a>
+                    </li>
+                    <li class="page-footer-list__item">
+                      <svg width="17" height="17">
+                        <use xlink:href="images/sprite.svg#clock-icon"></use>
+                      </svg>
+                      24 / 7 / 365
+                    </li>
+                  </ul>
+                </div>
               </div>
-
-              <div class="page-footer__top-item">
-                <h2 class="page-footer__top-item-title">
-                  Contacts
-                </h2>
-                <ul class="page-footer-list">
-                  <li class="page-footer-list__item">
-                    <svg width="11" height="17">
-                      <use xlink:href="images/sprite.svg#mobile-icon"></use>
-                    </svg>
-                    <a class="page-footer-list__link" href="tel:380502004030">
-                      +38 (050) 200 40 30
+            </div>
+          </div>
+          <div class="page-footer__bottom">
+            <div class="container">
+              <div class="page-footer__bottom-inner">
+                <p class="page-footer__copyright-text">
+                  Copyright © 2021. All rights reserved
+                </p>
+                <ul class="payment-method-list">
+                  <li class="payment-method-list__item">
+                    <a
+                      class="payment-method-list__link"
+                      href="#"
+                      aria-label="master card link"
+                    >
+                      <svg width="29" height="21">
+                        <use
+                          xlink:href="images/sprite.svg#master-card-icon"
+                        ></use>
+                      </svg>
                     </a>
                   </li>
-                  <li class="page-footer-list__item">
-                    <svg width="15" height="11">
-                      <use xlink:href="images/sprite.svg#email-icon"></use>
-                    </svg>
-                    <a class="page-footer-list__link" href="mailto:info@a2b.taxi">
-                      info@a2b.taxi
+                  <li class="payment-method-list__item">
+                    <a
+                      class="payment-method-list__link"
+                      href="#"
+                      aria-label="visa card link"
+                    >
+                      <svg width="29" height="21">
+                        <use xlink:href="images/sprite.svg#visa-icon"></use>
+                      </svg>
                     </a>
                   </li>
-                  <li class="page-footer-list__item">
-                    <svg width="17" height="17">
-                      <use xlink:href="images/sprite.svg#clock-icon"></use>
-                    </svg>
-                    24 / 7 / 365
+                  <li class="payment-method-list__item">
+                    <a
+                      class="payment-method-list__link"
+                      href="#"
+                      aria-label="apple pay link"
+                    >
+                      <svg width="29" height="21">
+                        <use
+                          xlink:href="images/sprite.svg#apple-pay-icon"
+                        ></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
             </div>
-
           </div>
-        </div>
-        <div class="page-footer__bottom">
-          <div class="container">
-            <div class="page-footer__bottom-inner">
-              <p class="page-footer__copyright-text">
-                Copyright © 2021. All rights reserved
-              </p>
-              <ul class="payment-method-list">
-                <li class="payment-method-list__item">
-                  <a class="payment-method-list__link" href="#" aria-label="master card link">
-                    <svg width="29" height="21">
-                      <use xlink:href="images/sprite.svg#master-card-icon"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="payment-method-list__item">
-                  <a class="payment-method-list__link" href="#" aria-label="visa card link">
-                    <svg width="29" height="21">
-                      <use xlink:href="images/sprite.svg#visa-icon"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="payment-method-list__item">
-                  <a class="payment-method-list__link" href="#" aria-label="apple pay link">
-                    <svg width="29" height="21">
-                      <use xlink:href="images/sprite.svg#apple-pay-icon"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
+        </footer>
 
-      <a class="to-top to-top--visible" id="to-top" href="#">↑</a>
+        <a class="to-top to-top--visible" id="to-top" href="#">↑</a>
+      </div>
     </div>
-  </div>
-  <script src="js/vendors.js"></script>
-  <script src="js/main.js"></script>
-
-</body>
-
+    <script src="js/vendors.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

@@ -1,100 +1,129 @@
 <!DOCTYPE html>
 <html class="page no-js" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css">
+    <!-- Edge и ряд мобильных браузеров слишком умны. Отключим это. -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta name="format-detection" content="date=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta content="notranslate" name="google" />
 
-  <!-- Edge и ряд мобильных браузеров слишком умны. Отключим это. -->
-  <meta name="format-detection" content="telephone=no">
-  <meta name="format-detection" content="address=no">
-  <meta name="format-detection" content="date=no">
-  <meta name="format-detection" content="email=no">
-  <meta content="notranslate" name="google">
+    <!-- Предзагрузка шрифтов или иных ресурсов -->
+    <!-- <link rel="preload" href="fonts/Bloggersans.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
 
-  <!-- Предзагрузка шрифтов или иных ресурсов -->
-  <!-- <link rel="preload" href="fonts/Bloggersans.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>The Real Movers</title>
+  </head>
 
-  <title>The Real Movers</title>
-</head>
-
-<body>
-  <div class="mobile-menu" id="mobile-menu">
-    <div class="mobile-menu__backdrop" id="backdrop"></div>
-    <div class="mobile-menu__inner"></div>
-  </div>
-  <div class="page__inner">
-    <div class="page__content">
-      <header class="page-header">
-        <div class="container">
-          <div class="page-header__inner">
-            <a class="logo" href="/">
-              <img src="images/logo.svg" alt="logotype">
-            </a>
-
-            <nav class="main-nav" id="nav" data-da=".mobile-menu__inner,991,1">
-              <ul class="main-nav__list">
-                <li class="main-nav__item main-nav__item--has-child">
-                  <a class="main-nav__link" href="#">Board</a>
-                  <div class="main-nav__sublist-wrapper main-nav__sublist-wrapper--lvl-2">
-                    <ul class="main-nav__list main-nav__list--lvl-2">
-                      <li class="main-nav__item main-nav__item--lvl-2">
-                        <a class="main-nav__link main-nav__link--lvl-2" href="cubic-feets.html">Cubic feets</a>
-                      </li>
-                      <li class="main-nav__item main-nav__item--lvl-2">
-                        <a class="main-nav__link main-nav__link--lvl-2" href="pick-ups.html">Pick ups</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="main-nav__item main-nav__item--has-child">
-                  <a class="main-nav__link" href="#">Post job</a>
-                  <div class="main-nav__sublist-wrapper main-nav__sublist-wrapper--lvl-2">
-                    <ul class="main-nav__list main-nav__list--lvl-2">
-                      <li class="main-nav__item main-nav__item--lvl-2">
-                        <a class="main-nav__link main-nav__link--lvl-2" href="new-pick-up-post.html">Pick up</a>
-                      </li>
-                      <li class="main-nav__item main-nav__item--lvl-2">
-                        <a class="main-nav__link main-nav__link--lvl-2" href="new-cf-post.html">Cubic feet</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="pricing.html">Pricing</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="app-tutorial.html">App tutorial</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="about.html">About us</a>
-                </li>
-                <li class="main-nav__item">
-                  <a class="main-nav__link" href="contact-us.html">Contact us</a>
-                </li>
-              </ul>
-            </nav>
-
-            <div class="auth-block" data-da=".mobile-menu__inner,991,3">
-              <a class="auth-block__link" href="#">
-                <svg width="12" height="14">
-                  <use xlink:href="images/sprite.svg#user-icon">
-                  </use>
-                </svg>
-                Log in
+  <body>
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu__backdrop" id="backdrop"></div>
+      <div class="mobile-menu__inner"></div>
+    </div>
+    <div class="page__inner">
+      <div class="page__content">
+        <header class="page-header">
+          <div class="container">
+            <div class="page-header__inner">
+              <a class="logo" href="index.html">
+                <img src="images/logo.svg" alt="logotype" />
               </a>
-              <a class="auth-block__link auth-block__link--accent" href="#">
-                Sign up
-              </a>
-            </div>
 
-            <!-- <div class="user-nav">
+              <nav
+                class="main-nav"
+                id="nav"
+                data-da=".mobile-menu__inner,991,1"
+              >
+                <ul class="main-nav__list">
+                  <li class="main-nav__item main-nav__item--has-child">
+                    <a class="main-nav__link" href="#">Board</a>
+                    <div
+                      class="main-nav__sublist-wrapper main-nav__sublist-wrapper--lvl-2"
+                    >
+                      <ul class="main-nav__list main-nav__list--lvl-2">
+                        <li class="main-nav__item main-nav__item--lvl-2">
+                          <a
+                            class="main-nav__link main-nav__link--lvl-2"
+                            href="cubic-feets.html"
+                            >Cubic feets</a
+                          >
+                        </li>
+                        <li class="main-nav__item main-nav__item--lvl-2">
+                          <a
+                            class="main-nav__link main-nav__link--lvl-2"
+                            href="pick-ups.html"
+                            >Pick ups</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="main-nav__item main-nav__item--has-child">
+                    <a class="main-nav__link" href="#">Post job</a>
+                    <div
+                      class="main-nav__sublist-wrapper main-nav__sublist-wrapper--lvl-2"
+                    >
+                      <ul class="main-nav__list main-nav__list--lvl-2">
+                        <li class="main-nav__item main-nav__item--lvl-2">
+                          <a
+                            class="main-nav__link main-nav__link--lvl-2"
+                            href="new-pick-up-post.html"
+                            >Pick up</a
+                          >
+                        </li>
+                        <li class="main-nav__item main-nav__item--lvl-2">
+                          <a
+                            class="main-nav__link main-nav__link--lvl-2"
+                            href="new-cf-post.html"
+                            >Cubic feet</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="pricing.html">Pricing</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="app-tutorial.html"
+                      >App tutorial</a
+                    >
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="about.html">About us</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="contact-us.html"
+                      >Contact us</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+
+              <div class="auth-block" data-da=".mobile-menu__inner,991,3">
+                <a class="auth-block__link" href="#">
+                  <svg width="12" height="14">
+                    <use xlink:href="images/sprite.svg#user-icon"></use>
+                  </svg>
+                  Log in
+                </a>
+                <a class="auth-block__link auth-block__link--accent" href="#">
+                  Sign up
+                </a>
+              </div>
+
+              <!-- <div class="user-nav">
           <div class="user-nav__info-wrap">
             <img src="images/user-thumbnail.jpeg" width="36" height="36" alt="user thumbnail" class="user-nav__thumbnail">
             <div class="user-nav__name">igor</div>
@@ -121,440 +150,606 @@
           </ul>
       </div> -->
 
-            <button class="burger" id="burger" data-target-id="mobile-menu" data-target-class-toggle="mobile-menu--opened" aria-label="mobile menu button">
-              <span></span>
-              <span></span>
-            </button>
+              <button
+                class="burger"
+                id="burger"
+                data-target-id="mobile-menu"
+                data-target-class-toggle="mobile-menu--opened"
+                aria-label="mobile menu button"
+              >
+                <span></span>
+                <span></span>
+              </button>
+            </div>
           </div>
-        </div>
-      </header>
+        </header>
 
-      <main class="page__main">
-        <section class="top-section">
-          <div class="container">
-            <div class="top-section__inner">
-              <div class="top-section__tabs">
-                <div class="tabs">
-                  <ul class="tabs__links" role="tablist">
-                    <li class="tabs__link-wrap tabs__link-wrap--active" role="presentation">
-                      <a class="tabs__link" href="#pick_up_tab" data-toggle="tab" role="tab">
+        <main class="page__main">
+          <section class="top-section">
+            <div class="container">
+              <div class="top-section__inner">
+                <div class="top-section__tabs">
+                  <div class="tabs">
+                    <ul class="tabs__links" role="tablist">
+                      <li
+                        class="tabs__link-wrap tabs__link-wrap--active"
+                        role="presentation"
+                      >
+                        <a
+                          class="tabs__link"
+                          href="#pick_up_tab"
+                          data-toggle="tab"
+                          role="tab"
+                        >
+                          Pick ups
+                        </a>
+                      </li>
+                      <li class="tabs__link-wrap" role="presentation">
+                        <a
+                          class="tabs__link"
+                          href="#cf_tab"
+                          data-toggle="tab"
+                          role="tab"
+                        >
+                          Cubic feets
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="tabs__content-wrapper">
+                      <div
+                        class="tabs__content-item tabs__content-item--active"
+                        id="pick_up_tab"
+                        role="tabpanel"
+                      >
+                        <div class="transportations-search-form">
+                          <h2 class="transportations-search-form__title">
+                            Tired of browsing a million chats?
+                          </h2>
+                          <form action="#">
+                            <div
+                              class="transportations-search-form__fields-wrap"
+                            >
+                              <label
+                                class="field-text transportations-search-form__field-text"
+                              >
+                                <span class="field-text__input-wrap">
+                                  <input
+                                    class="field-text__input"
+                                    type="text"
+                                    placeholder="Moving from"
+                                  />
+                                </span>
+                              </label>
+                              <label
+                                class="field-text transportations-search-form__field-text"
+                              >
+                                <span class="field-text__input-wrap">
+                                  <input
+                                    class="field-text__input"
+                                    type="text"
+                                    placeholder="Moving to"
+                                  />
+                                </span>
+                              </label>
+                            </div>
+                            <div class="transportations-search-form__actions">
+                              <button
+                                class="button button--full-width button--primary transportations-search-form__submit-btn"
+                                type="submit"
+                              >
+                                Search
+                              </button>
+                              <button
+                                class="button button--full-width transportations-search-form__calendar-btn"
+                                type="submit"
+                              >
+                                <span>Calendar</span>
+                                <svg width="16" height="18">
+                                  <use
+                                    xlink:href="images/sprite.svg#calendar-icon"
+                                  ></use>
+                                </svg>
+                              </button>
+                              <a
+                                class="button button--transparent transportations-search-form__new-post-link"
+                                href="/new-pick-up"
+                              >
+                                <svg width="16" height="18">
+                                  <use
+                                    xlink:href="images/sprite.svg#calendar-icon"
+                                  ></use>
+                                </svg>
+                                <span>post pick up</span>
+                              </a>
+                              <button
+                                class="button button--transparent transportations-search-form__filters-clear-btn"
+                                type="button"
+                              >
+                                <svg width="16" height="18">
+                                  <use
+                                    xlink:href="images/sprite.svg#close-icon"
+                                  ></use>
+                                </svg>
+                                clear all filters
+                              </button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div
+                        class="tabs__content-item"
+                        id="cf_tab"
+                        role="tabpanel"
+                      >
+                        <div class="transportations-search-form">
+                          <h2 class="transportations-search-form__title">
+                            Tired of browsing a million chats?
+                          </h2>
+                          <form action="#">
+                            <div
+                              class="transportations-search-form__fields-wrap"
+                            >
+                              <label
+                                class="field-text transportations-search-form__field-text"
+                              >
+                                <span class="field-text__input-wrap">
+                                  <input
+                                    class="field-text__input"
+                                    type="text"
+                                    placeholder="Moving from"
+                                  />
+                                </span>
+                              </label>
+                              <label
+                                class="field-text transportations-search-form__field-text"
+                              >
+                                <span class="field-text__input-wrap">
+                                  <input
+                                    class="field-text__input"
+                                    type="text"
+                                    placeholder="Moving to"
+                                  />
+                                </span>
+                              </label>
+                            </div>
+                            <div class="transportations-search-form__actions">
+                              <button
+                                class="button button--full-width button--primary transportations-search-form__submit-btn"
+                                type="submit"
+                              >
+                                Search
+                              </button>
+                              <button
+                                class="button button--full-width transportations-search-form__calendar-btn"
+                                type="submit"
+                              >
+                                <span>Calendar</span>
+                                <svg width="16" height="18">
+                                  <use
+                                    xlink:href="images/sprite.svg#calendar-icon"
+                                  ></use>
+                                </svg>
+                              </button>
+                              <a
+                                class="button button--transparent transportations-search-form__new-post-link"
+                                href="/new-pick-up"
+                              >
+                                <svg width="16" height="18">
+                                  <use
+                                    xlink:href="images/sprite.svg#calendar-icon"
+                                  ></use>
+                                </svg>
+                                <span>post cubic feets</span>
+                              </a>
+                              <button
+                                class="button button--transparent transportations-search-form__filters-clear-btn"
+                                type="button"
+                              >
+                                <svg width="16" height="18">
+                                  <use
+                                    xlink:href="images/sprite.svg#close-icon"
+                                  ></use>
+                                </svg>
+                                clear all filters
+                              </button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="advantages page-section">
+            <div class="container">
+              <div class="advantages__inner">
+                <ul class="advantages__list">
+                  <li class="advantages__list-item advanatges-item">
+                    <div class="advantages-item__img-wrap">
+                      <img src="images/advantages/image-1.jpg" alt="image-1" />
+                    </div>
+                    <div class="advantages-item__content-wrap">
+                      <div class="advantages-item__content">
+                        <h3 class="advantages-item__title">
+                          We got your back!
+                        </h3>
+                        <p class="advantages-item__descr">
+                          Looking for cubic feets or to get a pickup job?
+                          Spending too much time on this? Our app contains main
+                          chats from WhatsApp and Telegram groups.Every day we
+                          have more than 100 jobs loaded into our system. Stop
+                          wasting time by browsing chats. Our team already did
+                          it for you.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="advantages__list-item advanatges-item">
+                    <div class="advantages-item__img-wrap">
+                      <img src="images/advantages/image-2.jpg" alt="image-2" />
+                    </div>
+                    <div class="advantages-item__content-wrap">
+                      <div class="advantages-item__content">
+                        <h3 class="advantages-item__title">
+                          Start growing your business today
+                        </h3>
+                        <p>
+                          Our mission is helping everyone who want to start or
+                          improve their moving business. <br />
+                          We are going to listen to every single opinion how to
+                          make our product the way you guys want it.
+                        </p>
+                        <p>
+                          We’re focused on our customer's experience and we are
+                          here to make your business grow up faster.
+                        </p>
+                        <p>
+                          Thanks to many years of moving business experience we
+                          have created the perfect application in which we
+                          combine everything you need to successfully conduct
+                          business, save time and user convenience.
+                        </p>
+                        <p>Let’s change the moving system together.</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="video-preview page-section">
+            <div class="container">
+              <div class="video-preview__inner">
+                <div class="video-preview__left-wrap">
+                  <h2 class="video-preview__title">App tutorial</h2>
+                  <p class="video-preview__descr">
+                    We know how valuable is time for moving business. To save
+                    your time we made an informative video tutorial for our app
+                    which will show you all functions in 90 seconds.
+                  </p>
+                </div>
+                <div class="video-preview__right-wrap">
+                  <a href="#" class="video-preview__link">
+                    <img
+                      src="images/video-preview/image.png"
+                      width="508"
+                      height="475"
+                      alt="video preview image"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="transportations page-section">
+            <div class="container">
+              <div class="transportations__inner">
+                <h2 class="transportations__title">Pick ups</h2>
+                <table class="table-responsive transportations-table">
+                  <thead>
+                    <tr>
+                      <th>Move Date</th>
+                      <th>Moving From</th>
+                      <th>Moving To</th>
+                      <th>CF</th>
+                      <th>Lbs</th>
+                      <th>Miles</th>
+                      <th>Estimate</th>
+                      <th>Contact</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="transportations-table__item">
+                      <td
+                        class="transportations-table__item-move-date"
+                        data-label="Move Date:"
+                      >
+                        <span>
+                          <time datetime="2022-02-26">02/26/2022</time>
+                          <br />
+                          <time datetime="2022-02-27">02/27/2022</time>
+                        </span>
+                      </td>
+                      <td
+                        class="transportations-table__item-moving-from"
+                        data-label="Moving From:"
+                      >
+                        <div>
+                          <span>Portland</span>,
+                          <span>OR</span>
+                          <br />
+                          <span>97225</span>
+                        </div>
+                      </td>
+                      <td
+                        class="transportations-table__item-moving-to"
+                        data-label="Moving To:"
+                      >
+                        <div>
+                          <span>Windsor</span>,
+                          <span>CT</span>
+                          <br />
+                          <span>06095</span>
+                        </div>
+                      </td>
+                      <td
+                        class="transportations-table__item-cf"
+                        data-label="Cf:"
+                      >
+                        <span>351 cf</span>
+                      </td>
+                      <td
+                        class="transportations-table__item-miles"
+                        data-label="Miles:"
+                      >
+                        <span>1865</span>
+                      </td>
+                      <td
+                        class="transportations-table__item-lbs"
+                        data-label="Lbs:"
+                      >
+                        <span>2457 lbs</span>
+                      </td>
+                      <td
+                        class="transportations-table__item-estimate"
+                        data-label="Estimate:"
+                      >
+                        <span>2.275.70 $</span>
+                      </td>
+                      <td
+                        class="transportations-table__item-contact"
+                        data-label="Contact:"
+                      >
+                        <button
+                          class="button button--primary button--full-width transportations-table__item-contact-access-btn"
+                          type="button"
+                        >
+                          get access
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="transportations__pagination-wrap">
+                  <div
+                    class="pagination transportations__pagination"
+                    aria-label="Page navigation"
+                  >
+                    <span class="pagination__item">prev</span>
+                    <span
+                      class="pagination__item pagination__item--active"
+                      href="#"
+                      >1</span
+                    >
+                    <span class="pagination__item">...</span>
+                    <a class="pagination__item" href="#">2</a>
+                    <a class="pagination__item" href="#">3</a>
+                    <a class="pagination__item" href="#">next</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+      <div class="page__footer-wrap">
+        <footer class="page-footer">
+          <div class="page-footer__top">
+            <div class="container">
+              <div class="page-footer__top-inner">
+                <div class="page-footer__top-item">
+                  <a class="logo" href="/">
+                    <img src="images/logo.svg" alt="logotype" />
+                  </a>
+
+                  <div class="footer-social-links">
+                    <p>
+                      Any questions? <br />
+                      Contact us on Telegram or WhatsApp <br />
+                      and we will help you directly.
+                    </p>
+                    <ul class="social">
+                      <li
+                        class="social__link-wrap social__link-wrap--telegram"
+                        title="Telegram"
+                      >
+                        <a
+                          class="social__link"
+                          href="#"
+                          aria-label="open telegram"
+                        >
+                          <svg width="13" height="11">
+                            <use
+                              xlink:href="images/sprite.svg#telegram-icon"
+                            ></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li
+                        class="social__link-wrap social__link-wrap--whatsapp"
+                        title="WhatsApp"
+                      >
+                        <a
+                          class="social__link"
+                          href="#"
+                          aria-label="open whatsapp"
+                        >
+                          <svg width="13" height="11">
+                            <use
+                              xlink:href="images/sprite.svg#whatsapp-icon"
+                            ></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="page-footer__top-item">
+                  <h2 class="page-footer__top-item-title">Menu</h2>
+                  <ul class="page-footer-list">
+                    <li class="page-footer-list__item">
+                      <a class="page-footer-list__link" href="pick-ups.html">
                         Pick ups
                       </a>
                     </li>
-                    <li class="tabs__link-wrap" role="presentation">
-                      <a class="tabs__link" href="#cf_tab" data-toggle="tab" role="tab">
-                        Cubic feets
+                    <li class="page-footer-list__item">
+                      <a class="page-footer-list__link" href="cubic-feets.html">
+                        Cf
+                      </a>
+                    </li>
+                    <li class="page-footer-list__item">
+                      <a
+                        class="page-footer-list__link"
+                        href="new-pick-up-post.html"
+                      >
+                        Post Pick up
+                      </a>
+                    </li>
+                    <li class="page-footer-list__item">
+                      <a class="page-footer-list__link" href="new-cf-post.html">
+                        Post Cf
+                      </a>
+                    </li>
+                    <li class="page-footer-list__item">
+                      <a class="page-footer-list__link" href="pricing.html">
+                        Pricing
+                      </a>
+                    </li>
+                    <li class="page-footer-list__item">
+                      <a class="page-footer-list__link" href="about.html">
+                        About us
+                      </a>
+                    </li>
+                    <li class="page-footer-list__item">
+                      <a class="page-footer-list__link" href="reviews.html">
+                        Reviews
+                      </a>
+                    </li>
+                    <li class="page-footer-list__item">
+                      <a
+                        class="page-footer-list__link"
+                        href="app-tutorial.html"
+                      >
+                        App Tutorial
+                      </a>
+                    </li>
+                    <li class="page-footer-list__item">
+                      <a class="page-footer-list__link" href="contact-us.html">
+                        Contact us
                       </a>
                     </li>
                   </ul>
-                  <div class="tabs__content-wrapper">
-                    <div class="tabs__content-item tabs__content-item--active" id="pick_up_tab" role="tabpanel">
-                      <div class="transportations-search-form">
-                        <h2 class="transportations-search-form__title">
-                          Tired of browsing a million chats?
-                        </h2>
-                        <form action="#">
-                          <div class="transportations-search-form__fields-wrap">
-                            <label class="field-text transportations-search-form__field-text">
-                              <span class="field-text__input-wrap">
-                                <input class="field-text__input" type="text" placeholder="Moving from">
-                              </span>
-                            </label>
-                            <label class="field-text transportations-search-form__field-text">
-                              <span class="field-text__input-wrap">
-                                <input class="field-text__input" type="text" placeholder="Moving to">
-                              </span>
-                            </label>
-                          </div>
-                          <div class="transportations-search-form__actions">
-                            <button class="button button--full-width button--primary transportations-search-form__submit-btn" type="submit">
-                              Search
-                            </button>
-                            <button class="button button--full-width transportations-search-form__calendar-btn" type="submit">
-                              <span>Calendar</span>
-                              <svg width="16" height="18">
-                                <use xlink:href="images/sprite.svg#calendar-icon">
-                                </use>
-                              </svg>
-                            </button>
-                            <a class="button button--transparent transportations-search-form__new-post-link" href="/new-pick-up">
-                              <svg width="16" height="18">
-                                <use xlink:href="images/sprite.svg#calendar-icon">
-                                </use>
-                              </svg>
-                              <span>post pick up</span>
-                            </a>
-                            <button class="button button--transparent transportations-search-form__filters-clear-btn" type="button">
-                              <svg width="16" height="18">
-                                <use xlink:href="images/sprite.svg#close-icon">
-                                </use>
-                              </svg>
-                              clear all filters
-                            </button>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                    <div class="tabs__content-item" id="cf_tab" role="tabpanel">
-                      <div class="transportations-search-form">
-                        <h2 class="transportations-search-form__title">
-                          Tired of browsing a million chats?
-                        </h2>
-                        <form action="#">
-                          <div class="transportations-search-form__fields-wrap">
-                            <label class="field-text transportations-search-form__field-text">
-                              <span class="field-text__input-wrap">
-                                <input class="field-text__input" type="text" placeholder="Moving from">
-                              </span>
-                            </label>
-                            <label class="field-text transportations-search-form__field-text">
-                              <span class="field-text__input-wrap">
-                                <input class="field-text__input" type="text" placeholder="Moving to">
-                              </span>
-                            </label>
-                          </div>
-                          <div class="transportations-search-form__actions">
-                            <button class="button button--full-width button--primary transportations-search-form__submit-btn" type="submit">
-                              Search
-                            </button>
-                            <button class="button button--full-width transportations-search-form__calendar-btn" type="submit">
-                              <span>Calendar</span>
-                              <svg width="16" height="18">
-                                <use xlink:href="images/sprite.svg#calendar-icon">
-                                </use>
-                              </svg>
-                            </button>
-                            <a class="button button--transparent transportations-search-form__new-post-link" href="/new-pick-up">
-                              <svg width="16" height="18">
-                                <use xlink:href="images/sprite.svg#calendar-icon">
-                                </use>
-                              </svg>
-                              <span>post cubic feets</span>
-                            </a>
-                            <button class="button button--transparent transportations-search-form__filters-clear-btn" type="button">
-                              <svg width="16" height="18">
-                                <use xlink:href="images/sprite.svg#close-icon">
-                                </use>
-                              </svg>
-                              clear all filters
-                            </button>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
+                </div>
+
+                <div class="page-footer__top-item">
+                  <h2 class="page-footer__top-item-title">Contacts</h2>
+                  <ul class="page-footer-list">
+                    <li class="page-footer-list__item">
+                      <svg width="11" height="17">
+                        <use xlink:href="images/sprite.svg#mobile-icon"></use>
+                      </svg>
+                      <a class="page-footer-list__link" href="tel:380502004030">
+                        +38 (050) 200 40 30
+                      </a>
+                    </li>
+                    <li class="page-footer-list__item">
+                      <svg width="15" height="11">
+                        <use xlink:href="images/sprite.svg#email-icon"></use>
+                      </svg>
+                      <a
+                        class="page-footer-list__link"
+                        href="mailto:info@a2b.taxi"
+                      >
+                        info@a2b.taxi
+                      </a>
+                    </li>
+                    <li class="page-footer-list__item">
+                      <svg width="17" height="17">
+                        <use xlink:href="images/sprite.svg#clock-icon"></use>
+                      </svg>
+                      24 / 7 / 365
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <section class="advantages page-section">
-          <div class="container">
-            <div class="advantages__inner">
-              <ul class="advantages__list">
-                <li class="advantages__list-item advanatges-item">
-                  <div class="advantages-item__img-wrap">
-                    <img src="images/advantages/image-1.jpg" alt="image-1">
-                  </div>
-                  <div class="advantages-item__content-wrap">
-                    <div class="advantages-item__content">
-                      <h3 class="advantages-item__title">
-                        We got your back!
-                      </h3>
-                      <p class="advantages-item__descr">
-                        Looking for cubic feets or to get a pickup job? Spending too much time on this?
-                        Our app contains main chats from WhatsApp and Telegram groups.Every day we have more than 100 jobs loaded into our system. Stop wasting time by browsing chats. Our team already did it for you.
-                      </p>
-                    </div>
-                  </div>
-                </li>
-                <li class="advantages__list-item advanatges-item">
-                  <div class="advantages-item__img-wrap">
-                    <img src="images/advantages/image-2.jpg" alt="image-2">
-                  </div>
-                  <div class="advantages-item__content-wrap">
-                    <div class="advantages-item__content">
-                      <h3 class="advantages-item__title">
-                        Start growing your business today
-                      </h3>
-                      <p>
-                        Our mission is helping everyone who want to start or improve their moving business. <br>
-                        We are going to listen to every single opinion how to make our product the way you guys want it.
-                      </p>
-                      <p>
-                        We’re focused on our customer's experience and we are here to make your business grow up faster.
-                      </p>
-                      <p>
-                        Thanks to many years of moving business experience we have created the perfect application in which we combine everything you need to successfully conduct business, save time and user convenience.
-                      </p>
-                      <p>
-                        Let’s change the moving system together.
-                      </p>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section class="video-preview page-section">
-          <div class="container">
-            <div class="video-preview__inner">
-              <div class="video-preview__left-wrap">
-                <h2 class="video-preview__title">
-                  App tutorial
-                </h2>
-                <p class="video-preview__descr">
-                  We know how valuable is time for moving business. To save your time we made an informative video tutorial for our app which will show you all functions in 90 seconds.
+          <div class="page-footer__bottom">
+            <div class="container">
+              <div class="page-footer__bottom-inner">
+                <p class="page-footer__copyright-text">
+                  Copyright © 2021. All rights reserved
                 </p>
-              </div>
-              <div class="video-preview__right-wrap">
-                <a href="#" class="video-preview__link">
-                  <img src="images/video-preview/image.png" width="508" height="475" alt="video preview image">
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="transportations page-section">
-          <div class="container">
-            <div class="transportations__inner">
-              <h2 class="transportations__title">Pick ups</h2>
-              <table class="table-responsive transportations-table">
-                <thead>
-                  <tr>
-                    <th>Move Date</th>
-                    <th>Moving From</th>
-                    <th>Moving To</th>
-                    <th>CF</th>
-                    <th>Lbs</th>
-                    <th>Miles</th>
-                    <th>Estimate</th>
-                    <th>Contact</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="transportations-table__item">
-                    <td class="transportations-table__item-move-date" data-label="Move Date:">
-                      <span>
-                        <time datetime="2022-02-26">02/26/2022</time>
-                        <br>
-                        <time datetime="2022-02-27">02/27/2022</time>
-                      </span>
-                    </td>
-                    <td class="transportations-table__item-moving-from" data-label="Moving From:">
-                      <div>
-                        <span>Portland</span>,
-                        <span>OR</span>
-                        <br>
-                        <span>97225</span>
-                      </div>
-                    </td>
-                    <td class="transportations-table__item-moving-to" data-label="Moving To:">
-                      <div>
-                        <span>Windsor</span>,
-                        <span>CT</span>
-                        <br>
-                        <span>06095</span>
-                      </div>
-                    </td>
-                    <td class="transportations-table__item-cf" data-label="Cf:">
-                      <span>351 cf</span>
-                    </td>
-                    <td class="transportations-table__item-miles" data-label="Miles:">
-                      <span>1865</span>
-                    </td>
-                    <td class="transportations-table__item-lbs" data-label="Lbs:">
-                      <span>2457 lbs</span>
-                    </td>
-                    <td class="transportations-table__item-estimate" data-label="Estimate:">
-                      <span>2.275.70 $</span>
-                    </td>
-                    <td class="transportations-table__item-contact" data-label="Contact:">
-                      <button class="button button--primary button--full-width transportations-table__item-contact-access-btn" type="button">
-                        get access
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <div class="transportations__pagination-wrap">
-                <div class="pagination transportations__pagination" aria-label="Page navigation">
-                  <span class="pagination__item">prev</span>
-                  <span class="pagination__item pagination__item--active" href="#">1</span>
-                  <span class="pagination__item">...</span>
-                  <a class="pagination__item" href="#">2</a>
-                  <a class="pagination__item" href="#">3</a>
-                  <a class="pagination__item" href="#">next</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-    </div>
-    <div class="page__footer-wrap">
-      <footer class="page-footer">
-        <div class="page-footer__top">
-          <div class="container">
-            <div class="page-footer__top-inner">
-              <div class="page-footer__top-item">
-                <a class="logo" href="/">
-                  <img src="images/logo.svg" alt="logotype">
-                </a>
-
-                <div class="footer-social-links">
-                  <p>
-                    Any questions? <br>
-              Contact us on Telegram or WhatsApp <br> and we will help you directly.
-                  </p>
-                  <ul class="social">
-                    <li class="social__link-wrap  social__link-wrap--telegram" title="Telegram">
-                      <a class="social__link" href="#" aria-label="open telegram">
-                        <svg width="13" height="11">
-                          <use xlink:href="images/sprite.svg#telegram-icon">
-                          </use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social__link-wrap  social__link-wrap--whatsapp" title="WhatsApp">
-                      <a class="social__link" href="#" aria-label="open whatsapp">
-                        <svg width="13" height="11">
-                          <use xlink:href="images/sprite.svg#whatsapp-icon">
-                          </use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="page-footer__top-item">
-                <h2 class="page-footer__top-item-title">
-                  Menu
-                </h2>
-                <ul class="page-footer-list">
-                  <li class="page-footer-list__item">
-                    <a class="page-footer-list__link" href="pick-ups.html">
-                      Pick ups
+                <ul class="payment-method-list">
+                  <li class="payment-method-list__item">
+                    <a
+                      class="payment-method-list__link"
+                      href="#"
+                      aria-label="master card link"
+                    >
+                      <svg width="29" height="21">
+                        <use
+                          xlink:href="images/sprite.svg#master-card-icon"
+                        ></use>
+                      </svg>
                     </a>
                   </li>
-                  <li class="page-footer-list__item">
-                    <a class="page-footer-list__link" href="cubic-feets.html">
-                      Cf
+                  <li class="payment-method-list__item">
+                    <a
+                      class="payment-method-list__link"
+                      href="#"
+                      aria-label="visa card link"
+                    >
+                      <svg width="29" height="21">
+                        <use xlink:href="images/sprite.svg#visa-icon"></use>
+                      </svg>
                     </a>
                   </li>
-                  <li class="page-footer-list__item">
-                    <a class="page-footer-list__link" href="new-pick-up-post.html">
-                      Post Pick up
-                    </a>
-                  </li>
-                  <li class="page-footer-list__item">
-                    <a class="page-footer-list__link" href="new-cf-post.html">
-                      Post Cf
-                    </a>
-                  </li>
-                  <li class="page-footer-list__item">
-                    <a class="page-footer-list__link" href="pricing.html">
-                      Pricing
-                    </a>
-                  </li>
-                  <li class="page-footer-list__item">
-                    <a class="page-footer-list__link" href="about.html">
-                      About us
-                    </a>
-                  </li>
-                  <li class="page-footer-list__item">
-                    <a class="page-footer-list__link" href="reviews.html">
-                      Reviews
-                    </a>
-                  </li>
-                  <li class="page-footer-list__item">
-                    <a class="page-footer-list__link" href="app-tutorial.html">
-                      App Tutorial
-                    </a>
-                  </li>
-                  <li class="page-footer-list__item">
-                    <a class="page-footer-list__link" href="contact-us.html">
-                      Contact us
+                  <li class="payment-method-list__item">
+                    <a
+                      class="payment-method-list__link"
+                      href="#"
+                      aria-label="apple pay link"
+                    >
+                      <svg width="29" height="21">
+                        <use
+                          xlink:href="images/sprite.svg#apple-pay-icon"
+                        ></use>
+                      </svg>
                     </a>
                   </li>
                 </ul>
-
-              </div>
-
-              <div class="page-footer__top-item">
-                <h2 class="page-footer__top-item-title">
-                  Contacts
-                </h2>
-                <ul class="page-footer-list">
-                  <li class="page-footer-list__item">
-                    <svg width="11" height="17">
-                      <use xlink:href="images/sprite.svg#mobile-icon"></use>
-                    </svg>
-                    <a class="page-footer-list__link" href="tel:380502004030">
-                      +38 (050) 200 40 30
-                    </a>
-                  </li>
-                  <li class="page-footer-list__item">
-                    <svg width="15" height="11">
-                      <use xlink:href="images/sprite.svg#email-icon"></use>
-                    </svg>
-                    <a class="page-footer-list__link" href="mailto:info@a2b.taxi">
-                      info@a2b.taxi
-                    </a>
-                  </li>
-                  <li class="page-footer-list__item">
-                    <svg width="17" height="17">
-                      <use xlink:href="images/sprite.svg#clock-icon"></use>
-                    </svg>
-                    24 / 7 / 365
-                  </li>
-                </ul>
               </div>
             </div>
-
           </div>
-        </div>
-        <div class="page-footer__bottom">
-          <div class="container">
-            <div class="page-footer__bottom-inner">
-              <p class="page-footer__copyright-text">
-                Copyright © 2021. All rights reserved
-              </p>
-              <ul class="payment-method-list">
-                <li class="payment-method-list__item">
-                  <a class="payment-method-list__link" href="#" aria-label="master card link">
-                    <svg width="29" height="21">
-                      <use xlink:href="images/sprite.svg#master-card-icon"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="payment-method-list__item">
-                  <a class="payment-method-list__link" href="#" aria-label="visa card link">
-                    <svg width="29" height="21">
-                      <use xlink:href="images/sprite.svg#visa-icon"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="payment-method-list__item">
-                  <a class="payment-method-list__link" href="#" aria-label="apple pay link">
-                    <svg width="29" height="21">
-                      <use xlink:href="images/sprite.svg#apple-pay-icon"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
+        </footer>
 
-      <a class="to-top to-top--visible" id="to-top" href="#">↑</a>
+        <a class="to-top to-top--visible" id="to-top" href="#">↑</a>
+      </div>
     </div>
-  </div>
-  <script src="js/vendors.js"></script>
-  <script src="js/main.js"></script>
-
-</body>
-
+    <script src="js/vendors.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
