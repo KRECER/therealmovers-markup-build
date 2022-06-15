@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html class="page no-js" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <!-- Edge и ряд мобильных браузеров слишком умны. Отключим это. -->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="email=no">
+  <meta content="notranslate" name="google">
+
+  <!-- Предзагрузка шрифтов или иных ресурсов -->
+  <!-- <link rel="preload" href="fonts/Bloggersans.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <title>The Real Movers | Cubic feets</title>
+</head>
+
+<body>
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu__backdrop" id="backdrop"></div>
+    <div class="mobile-menu__inner"></div>
+  </div>
+  <div class="page__inner">
+    <div class="page__content">
+      <header class="page-header">
+        <div class="container">
+          <div class="page-header__inner">
+            <a class="logo" href="/">
+              <img src="images/logo.svg" alt="logotype">
+            </a>
+
+            <nav class="main-nav" id="nav" data-da=".mobile-menu__inner,991,1">
+              <ul class="main-nav__list">
+                <li class="main-nav__item main-nav__item--has-child">
+                  <a class="main-nav__link" href="#">Board</a>
+                  <div class="main-nav__sublist-wrapper main-nav__sublist-wrapper--lvl-2">
+                    <ul class="main-nav__list main-nav__list--lvl-2">
+                      <li class="main-nav__item main-nav__item--lvl-2">
+                        <a class="main-nav__link main-nav__link--lvl-2" href="cubic-feets.html">Cubic feets</a>
+                      </li>
+                      <li class="main-nav__item main-nav__item--lvl-2">
+                        <a class="main-nav__link main-nav__link--lvl-2" href="pick-ups.html">Pick ups</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="main-nav__item main-nav__item--has-child">
+                  <a class="main-nav__link" href="#">Post job</a>
+                  <div class="main-nav__sublist-wrapper main-nav__sublist-wrapper--lvl-2">
+                    <ul class="main-nav__list main-nav__list--lvl-2">
+                      <li class="main-nav__item main-nav__item--lvl-2">
+                        <a class="main-nav__link main-nav__link--lvl-2" href="new-pick-up-post.html">Pick up</a>
+                      </li>
+                      <li class="main-nav__item main-nav__item--lvl-2">
+                        <a class="main-nav__link main-nav__link--lvl-2" href="new-cf-post.html">Cubic feet</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="pricing.html">Pricing</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="app-tutorial.html">App tutorial</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="about.html">About us</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="contact-us.html">Contact us</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="auth-block" data-da=".mobile-menu__inner,991,3">
+              <a class="auth-block__link" href="#">
+                <svg width="12" height="14">
+                  <use xlink:href="images/sprite.svg#user-icon">
+                  </use>
+                </svg>
+                Log in
+              </a>
+              <a class="auth-block__link auth-block__link--accent" href="#">
+                Sign up
+              </a>
+            </div>
+
+            <!-- <div class="user-nav">
+          <div class="user-nav__info-wrap">
+            <img src="images/user-thumbnail.jpeg" width="36" height="36" alt="user thumbnail" class="user-nav__thumbnail">
+            <div class="user-nav__name">igor</div>
+            <svg width="16" height="10">
+              <use xlink:href="images/sprite.svg#down-arrow-icon">
+            </svg>
+          </div>
+          <ul class="user-nav__list">
+            <li class="user-nav__list-item">
+              <a class="user-nav__list-item-link" href="#">Personal Information</a>
+            </li>
+            <li class="user-nav__list-item">
+              <a class="user-nav__list-item-link" href="#">Billing Profile</a>
+            </li>
+            <li class="user-nav__list-item">
+              <a class="user-nav__list-item-link" href="#">Billing History</a>
+            </li>
+            <li class="user-nav__list-item">
+              <a class="user-nav__list-item-link" href="#">Notify About The Route</a>
+            </li>
+            <li class="user-nav__list-item">
+              <a class="user-nav__list-item-link" href="#">Reset Password</a>
+            </li>
+          </ul>
+      </div> -->
+
+            <button class="burger" id="burger" data-target-id="mobile-menu" data-target-class-toggle="mobile-menu--opened" aria-label="mobile menu button">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main class="page__main">
+        <section class="top-section">
+          <div class="container">
+            <div class="top-section__inner">
+              <div class="top-section__tabs">
+                <div class="tabs">
+                  <ul class="tabs__links" role="tablist">
+                    <li class="tabs__link-wrap" role="presentation">
+                      <a class="tabs__link" href="pick-ups.html" role="tab">
+                        Pick ups
+                      </a>
+                    </li>
+                    <li class="tabs__link-wrap tabs__link-wrap--active" role="presentation">
+                      <a class="tabs__link" href="#" role="tab">
+                        Cubic feets
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="tabs__content-wrapper">
+                    <div class="tabs__content-item" id="pick_up_tab" role="tabpanel">
+                      <div class="transportations-search-form">
+                        <h2 class="transportations-search-form__title">
+                          Pick ups
+                        </h2>
+                        <form action="#">
+                          <div class="transportations-search-form__fields-wrap">
+                            <label class="field-text transportations-search-form__field-text">
+                              <span class="field-text__input-wrap">
+                                                                <input class="field-text__input" type="text" placeholder="Moving from">
+                                                            </span>
+                            </label>
+                            <label class="field-text transportations-search-form__field-text">
+                              <span class="field-text__input-wrap">
+                                                                <input class="field-text__input" type="text" placeholder="Moving to">
+                                                            </span>
+                            </label>
+                          </div>
+                          <div class="transportations-search-form__actions">
+                            <button class="button button--full-width button--primary transportations-search-form__submit-btn" type="submit">
+                              Search
+                            </button>
+                            <button class="button button--full-width transportations-search-form__calendar-btn" type="submit">
+                              <span>Calendar</span>
+                              <svg width="16" height="18">
+                                <use xlink:href="images/sprite.svg#calendar-icon">
+                                </use>
+                              </svg>
+                            </button>
+                            <a class="button button--transparent transportations-search-form__new-post-link" href="/new-pick-up">
+                              <svg width="16" height="18">
+                                <use xlink:href="images/sprite.svg#calendar-icon">
+                                </use>
+                              </svg>
+                              <span>post pick up</span>
+                            </a>
+                            <button class="button button--transparent transportations-search-form__filters-clear-btn" type="button">
+                              <svg width="16" height="18">
+                                <use xlink:href="images/sprite.svg#close-icon">
+                                </use>
+                              </svg>
+                              clear all filters
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="tabs__content-item tabs__content-item--active" id="cf_tab" role="tabpanel">
+                      <div class="transportations-search-form">
+                        <h2 class="transportations-search-form__title">
+                          Cubic feets
+                        </h2>
+                        <form action="#">
+                          <div class="transportations-search-form__fields-wrap">
+                            <label class="field-text transportations-search-form__field-text">
+                              <span class="field-text__input-wrap">
+                                                                <input class="field-text__input" type="text" placeholder="Moving from">
+                                                            </span>
+                            </label>
+                            <label class="field-text transportations-search-form__field-text">
+                              <span class="field-text__input-wrap">
+                                                                <input class="field-text__input" type="text" placeholder="Moving to">
+                                                            </span>
+                            </label>
+                          </div>
+                          <div class="transportations-search-form__actions">
+                            <button class="button button--full-width button--primary transportations-search-form__submit-btn" type="submit">
+                              Search
+                            </button>
+                            <button class="button button--full-width transportations-search-form__calendar-btn" type="submit">
+                              <span>Calendar</span>
+                              <svg width="16" height="18">
+                                <use xlink:href="images/sprite.svg#calendar-icon">
+                                </use>
+                              </svg>
+                            </button>
+                            <a class="button button--transparent transportations-search-form__new-post-link" href="/new-pick-up">
+                              <svg width="16" height="18">
+                                <use xlink:href="images/sprite.svg#calendar-icon">
+                                </use>
+                              </svg>
+                              <span>post cubic feets</span>
+                            </a>
+                            <button class="button button--transparent transportations-search-form__filters-clear-btn" type="button">
+                              <svg width="16" height="18">
+                                <use xlink:href="images/sprite.svg#close-icon">
+                                </use>
+                              </svg>
+                              clear all filters
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="transportations transportations--cubic-feets page-section">
+          <div class="container">
+            <div class="transportations__inner">
+              <h2 class="transportations__title visually-hidden">Pick ups</h2>
+              <div class="transportations__sort-list">
+                <div class="field-select transportations__sort-list-item">
+                  <div class="field-select__name visually-hidden">Sort by price</div>
+                  <div class="field-select__select-wrap">
+                    <select class="field-select__select" name="cf">
+                      <option value="">sort by cf</option>
+                      <option value="asc">asc</option>
+                      <option value="desc">desc</option>
+                    </select>
+                  </div>
+                </div>
+                <button class="button transportations__sorts-reset-btn">
+                  <span>Refresh list</span>
+                  <svg width="15" height="15">
+                    <use xlink:href="images/sprite.svg#refresh-icon">
+                    </use>
+                  </svg>
+                </button>
+              </div>
+              <div class="transportations__chips-and-link-wrap">
+                <ul class="chips">
+                  <li class="chips__item">
+                    <span class="chips__item-key">From</span>
+                    <svg width="12" height="7">
+                      <use xlink:href="images/sprite.svg#right-arrow-icon">
+                      </use>
+                    </svg>
+                    <span class="chips__item-value">UT</span>
+                    <button class="chips__item-delete-button" type="button">
+                      <svg width="12" height="7">
+                        <use xlink:href="images/sprite.svg#close-icon">
+                        </use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="chips__item">
+                    <span class="chips__item-key">To</span>
+                    <svg width="12" height="7">
+                      <use xlink:href="images/sprite.svg#right-arrow-icon">
+                      </use>
+                    </svg>
+                    <span class="chips__item-value">OR</span>
+                    <button class="chips__item-delete-button" type="button">
+                      <svg width="12" height="7">
+                        <use xlink:href="images/sprite.svg#close-icon">
+                        </use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+                <a class="transportations__turn-on-notifications-link" href="#">
+                  Don’t miss the best jobs! Turn on job notifications!
+                </a>
+              </div>
+              <table class="table-responsive transportations-table transportations-table--cf">
+                <thead>
+                  <tr>
+                    <th>Moving From</th>
+                    <th>Moving To</th>
+                    <th>CF</th>
+                    <th>Zip code</th>
+                    <th>Contact</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="transportations-table__item">
+                    <td class="transportations-table__item-moving-from" data-label="Moving From:">
+                      <div>
+                        <span>Portland</span>,
+                        <span>OR</span>
+                        <br>
+                        <span>97225</span>
+                      </div>
+                    </td>
+                    <td class="transportations-table__item-moving-to" data-label="Moving To:">
+                      <div>
+                        <span>Windsor</span>,
+                        <span>CT</span>
+                        <br>
+                        <span>06095</span>
+                      </div>
+                    </td>
+                    <td class="transportations-table__item-cf" data-label="Cf:">
+                      <span>351 cf</span>
+                    </td>
+                    <td class="transportations-table__item-zip-code" data-label="Zip code:">
+                      <span>1865</span>
+                    </td>
+                    <td class="transportations-table__item-contact" data-label="Contact:">
+                      <button class="button button--primary button--full-width transportations-table__item-contact-access-btn" type="button">
+                        get access
+                      </button>
+                    </td>
+                    <td class="transportations-table__item-actions">
+                      <button class="button button--icon">
+                        <svg width="21" height="18">
+                          <use xlink:href="images/sprite.svg#heart-icon">
+                          </use>
+                        </svg>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="transportations-table__item">
+                    <td class="transportations-table__item-moving-from" data-label="Moving From:">
+                      <div>
+                        <span>Portland</span>,
+                        <span>OR</span>
+                        <br>
+                        <span>97225</span>
+                      </div>
+                    </td>
+                    <td class="transportations-table__item-moving-to" data-label="Moving To:">
+                      <div>
+                        <span>Windsor</span>,
+                        <span>CT</span>
+                        <br>
+                        <span>06095</span>
+                      </div>
+                    </td>
+                    <td class="transportations-table__item-cf" data-label="Cf:">
+                      <span>351 cf</span>
+                    </td>
+                    <td class="transportations-table__item-zip-code" data-label="Zip code:">
+                      <span>1865</span>
+                    </td>
+                    <td class="transportations-table__item-contact" data-label="Contact:">
+                      <button class="button button--primary button--full-width transportations-table__item-contact-access-btn" type="button">
+                        get access
+                      </button>
+                    </td>
+                    <td class="transportations-table__item-actions">
+                      <button class="button button--icon">
+                        <svg width="21" height="18">
+                          <use xlink:href="images/sprite.svg#heart-icon">
+                          </use>
+                        </svg>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="transportations__pagination-wrap">
+                <div class="pagination transportations__pagination" aria-label="Page navigation">
+                  <span class="pagination__item">prev</span>
+                  <span class="pagination__item pagination__item--active" href="#">1</span>
+                  <span class="pagination__item">...</span>
+                  <a class="pagination__item" href="#">2</a>
+                  <a class="pagination__item" href="#">3</a>
+                  <a class="pagination__item" href="#">next</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="directions-filter-section">
+          <div class="container">
+            <div class="directions-filter-section__inner">
+              <h2 class="directions-filter-section__title">
+                Perhaps you are interested <br> in such directions?
+              </h2>
+              <div class="directions-filter-section__list directions-filter">
+                <button class="directions-filter__item" type="button">
+                  <span>From: Tx</span>
+                  <svg width="66" height="8">
+                    <use xlink:href="images/sprite.svg#from-to-line-icon">
+                    </use>
+                  </svg>
+                  <span>To: Ca</span>
+                </button>
+                <button class="directions-filter__item" type="button">
+                  <span>From: Tx</span>
+                  <svg width="66" height="8">
+                    <use xlink:href="images/sprite.svg#from-to-line-icon">
+                    </use>
+                  </svg>
+                  <span>To: Ca</span>
+                </button>
+                <button class="directions-filter__item" type="button">
+                  <span>From: Tx</span>
+                  <svg width="66" height="8">
+                    <use xlink:href="images/sprite.svg#from-to-line-icon">
+                    </use>
+                  </svg>
+                  <span>To: Ca</span>
+                </button>
+                <button class="directions-filter__item" type="button">
+                  <span>From: Tx</span>
+                  <svg width="66" height="8">
+                    <use xlink:href="images/sprite.svg#from-to-line-icon">
+                    </use>
+                  </svg>
+                  <span>To: Ca</span>
+                </button>
+                <button class="directions-filter__item" type="button">
+                  <span>From: Tx</span>
+                  <svg width="66" height="8">
+                    <use xlink:href="images/sprite.svg#from-to-line-icon">
+                    </use>
+                  </svg>
+                  <span>To: Ca</span>
+                </button>
+                <button class="directions-filter__item" type="button">
+                  <span>From: Tx</span>
+                  <svg width="66" height="8">
+                    <use xlink:href="images/sprite.svg#from-to-line-icon">
+                    </use>
+                  </svg>
+                  <span>To: Ca</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="subscribe-section page-section">
+          <div class="container">
+            <div class="subscribe-section__inner">
+              <h2 class="subscribe-section__title">
+                WE ARE ALWAYSE READY TO HELP YOU WITH ANY QUESTIONS
+              </h2>
+              <form class="subscribe-section__form">
+                <label class="field-text subscribe-section__form-field-text">
+                  <span class="field-text__input-wrap">
+                                        <input class="field-text__input" type="text" placeholder="Enter email">
+                                    </span>
+                </label>
+                <button class="button button--full-width subscribe-section__form-submit-btn" type="submit">
+                  Send
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="page__footer-wrap">
+      <footer class="page-footer">
+        <div class="page-footer__top">
+          <div class="container">
+            <div class="page-footer__top-inner">
+              <div class="page-footer__top-item">
+                <a class="logo" href="/">
+                  <img src="images/logo.svg" alt="logotype">
+                </a>
+
+                <div class="footer-social-links">
+                  <p>
+                    Any questions? <br>
+              Contact us on Telegram or WhatsApp <br> and we will help you directly.
+                  </p>
+                  <ul class="social">
+                    <li class="social__link-wrap  social__link-wrap--telegram" title="Telegram">
+                      <a class="social__link" href="#" aria-label="open telegram">
+                        <svg width="13" height="11">
+                          <use xlink:href="images/sprite.svg#telegram-icon">
+                          </use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__link-wrap  social__link-wrap--whatsapp" title="WhatsApp">
+                      <a class="social__link" href="#" aria-label="open whatsapp">
+                        <svg width="13" height="11">
+                          <use xlink:href="images/sprite.svg#whatsapp-icon">
+                          </use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="page-footer__top-item">
+                <h2 class="page-footer__top-item-title">
+                  Menu
+                </h2>
+                <ul class="page-footer-list">
+                  <li class="page-footer-list__item">
+                    <a class="page-footer-list__link" href="pick-ups.html">
+                      Pick ups
+                    </a>
+                  </li>
+                  <li class="page-footer-list__item">
+                    <a class="page-footer-list__link" href="cubic-feets.html">
+                      Cf
+                    </a>
+                  </li>
+                  <li class="page-footer-list__item">
+                    <a class="page-footer-list__link" href="new-pick-up-post.html">
+                      Post Pick up
+                    </a>
+                  </li>
+                  <li class="page-footer-list__item">
+                    <a class="page-footer-list__link" href="new-cf-post.html">
+                      Post Cf
+                    </a>
+                  </li>
+                  <li class="page-footer-list__item">
+                    <a class="page-footer-list__link" href="pricing.html">
+                      Pricing
+                    </a>
+                  </li>
+                  <li class="page-footer-list__item">
+                    <a class="page-footer-list__link" href="about.html">
+                      About us
+                    </a>
+                  </li>
+                  <li class="page-footer-list__item">
+                    <a class="page-footer-list__link" href="reviews.html">
+                      Reviews
+                    </a>
+                  </li>
+                  <li class="page-footer-list__item">
+                    <a class="page-footer-list__link" href="app-tutorial.html">
+                      App Tutorial
+                    </a>
+                  </li>
+                  <li class="page-footer-list__item">
+                    <a class="page-footer-list__link" href="contact-us.html">
+                      Contact us
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
+
+              <div class="page-footer__top-item">
+                <h2 class="page-footer__top-item-title">
+                  Contacts
+                </h2>
+                <ul class="page-footer-list">
+                  <li class="page-footer-list__item">
+                    <svg width="11" height="17">
+                      <use xlink:href="images/sprite.svg#mobile-icon"></use>
+                    </svg>
+                    <a class="page-footer-list__link" href="tel:380502004030">
+                      +38 (050) 200 40 30
+                    </a>
+                  </li>
+                  <li class="page-footer-list__item">
+                    <svg width="15" height="11">
+                      <use xlink:href="images/sprite.svg#email-icon"></use>
+                    </svg>
+                    <a class="page-footer-list__link" href="mailto:info@a2b.taxi">
+                      info@a2b.taxi
+                    </a>
+                  </li>
+                  <li class="page-footer-list__item">
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#clock-icon"></use>
+                    </svg>
+                    24 / 7 / 365
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="page-footer__bottom">
+          <div class="container">
+            <div class="page-footer__bottom-inner">
+              <p class="page-footer__copyright-text">
+                Copyright © 2021. All rights reserved
+              </p>
+              <ul class="payment-method-list">
+                <li class="payment-method-list__item">
+                  <a class="payment-method-list__link" href="#" aria-label="master card link">
+                    <svg width="29" height="21">
+                      <use xlink:href="images/sprite.svg#master-card-icon"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="payment-method-list__item">
+                  <a class="payment-method-list__link" href="#" aria-label="visa card link">
+                    <svg width="29" height="21">
+                      <use xlink:href="images/sprite.svg#visa-icon"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="payment-method-list__item">
+                  <a class="payment-method-list__link" href="#" aria-label="apple pay link">
+                    <svg width="29" height="21">
+                      <use xlink:href="images/sprite.svg#apple-pay-icon"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <a class="to-top to-top--visible" id="to-top" href="#">↑</a>
+    </div>
+  </div>
+  <script src="js/vendors.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
