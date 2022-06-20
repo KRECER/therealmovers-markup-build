@@ -1,129 +1,100 @@
 <!DOCTYPE html>
 <html class="page no-js" lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.min.css" />
 
-    <!-- Edge и ряд мобильных браузеров слишком умны. Отключим это. -->
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="format-detection" content="address=no" />
-    <meta name="format-detection" content="date=no" />
-    <meta name="format-detection" content="email=no" />
-    <meta content="notranslate" name="google" />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
 
-    <!-- Предзагрузка шрифтов или иных ресурсов -->
-    <!-- <link rel="preload" href="fonts/Bloggersans.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
+  <!-- Edge и ряд мобильных браузеров слишком умны. Отключим это. -->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="email=no">
+  <meta content="notranslate" name="google">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Предзагрузка шрифтов или иных ресурсов -->
+  <!-- <link rel="preload" href="fonts/Bloggersans.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
 
-    <title>The Real Movers | Reviews</title>
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
-  <body>
-    <div class="mobile-menu" id="mobile-menu">
-      <div class="mobile-menu__backdrop" id="backdrop"></div>
-      <div class="mobile-menu__inner"></div>
-    </div>
-    <div class="page__inner">
-      <div class="page__content">
-        <header class="page-header">
-          <div class="container">
-            <div class="page-header__inner">
-              <a class="logo" href="index.html">
-                <img src="images/logo.svg" alt="logotype" />
+  <title>The Real Movers | Reviews</title>
+</head>
+
+<body>
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu__backdrop" id="backdrop"></div>
+    <div class="mobile-menu__inner"></div>
+  </div>
+  <div class="page__inner">
+    <div class="page__content">
+      <header class="page-header">
+        <div class="container">
+          <div class="page-header__inner">
+            <a class="logo" href="/">
+              <img src="images/logo.svg" alt="logotype">
+            </a>
+
+            <nav class="main-nav" id="nav" data-da=".mobile-menu__inner,991,2">
+              <ul class="main-nav__list">
+                <li class="main-nav__item main-nav__item--has-child">
+                  <a class="main-nav__link" href="#">Board</a>
+                  <div class="main-nav__sublist-wrapper main-nav__sublist-wrapper--lvl-2">
+                    <ul class="main-nav__list main-nav__list--lvl-2">
+                      <li class="main-nav__item main-nav__item--lvl-2">
+                        <a class="main-nav__link main-nav__link--lvl-2" href="cubic-feets.html">Cubic feets</a>
+                      </li>
+                      <li class="main-nav__item main-nav__item--lvl-2">
+                        <a class="main-nav__link main-nav__link--lvl-2" href="pick-ups.html">Pick ups</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="main-nav__item main-nav__item--has-child">
+                  <a class="main-nav__link" href="#">Post job</a>
+                  <div class="main-nav__sublist-wrapper main-nav__sublist-wrapper--lvl-2">
+                    <ul class="main-nav__list main-nav__list--lvl-2">
+                      <li class="main-nav__item main-nav__item--lvl-2">
+                        <a class="main-nav__link main-nav__link--lvl-2" href="new-pick-up-post.html">Pick up</a>
+                      </li>
+                      <li class="main-nav__item main-nav__item--lvl-2">
+                        <a class="main-nav__link main-nav__link--lvl-2" href="new-cf-post.html">Cubic feet</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="pricing.html">Pricing</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="app-tutorial.html">App tutorial</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="about.html">About us</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="contact-us.html">Contact us</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="auth-block" data-da=".mobile-menu__inner,768,0">
+              <a class="auth-block__link" href="#">
+                <svg width="12" height="14">
+                  <use xlink:href="images/sprite.svg#user-icon">
+                  </use>
+                </svg>
+                Log in
               </a>
+              <a class="auth-block__link auth-block__link--accent" href="#">
+                Sign up
+              </a>
+            </div>
 
-              <nav
-                class="main-nav"
-                id="nav"
-                data-da=".mobile-menu__inner,991,1"
-              >
-                <ul class="main-nav__list">
-                  <li class="main-nav__item main-nav__item--has-child">
-                    <a class="main-nav__link" href="#">Board</a>
-                    <div
-                      class="main-nav__sublist-wrapper main-nav__sublist-wrapper--lvl-2"
-                    >
-                      <ul class="main-nav__list main-nav__list--lvl-2">
-                        <li class="main-nav__item main-nav__item--lvl-2">
-                          <a
-                            class="main-nav__link main-nav__link--lvl-2"
-                            href="cubic-feets.html"
-                            >Cubic feets</a
-                          >
-                        </li>
-                        <li class="main-nav__item main-nav__item--lvl-2">
-                          <a
-                            class="main-nav__link main-nav__link--lvl-2"
-                            href="pick-ups.html"
-                            >Pick ups</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="main-nav__item main-nav__item--has-child">
-                    <a class="main-nav__link" href="#">Post job</a>
-                    <div
-                      class="main-nav__sublist-wrapper main-nav__sublist-wrapper--lvl-2"
-                    >
-                      <ul class="main-nav__list main-nav__list--lvl-2">
-                        <li class="main-nav__item main-nav__item--lvl-2">
-                          <a
-                            class="main-nav__link main-nav__link--lvl-2"
-                            href="new-pick-up-post.html"
-                            >Pick up</a
-                          >
-                        </li>
-                        <li class="main-nav__item main-nav__item--lvl-2">
-                          <a
-                            class="main-nav__link main-nav__link--lvl-2"
-                            href="new-cf-post.html"
-                            >Cubic feet</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="main-nav__item">
-                    <a class="main-nav__link" href="pricing.html">Pricing</a>
-                  </li>
-                  <li class="main-nav__item">
-                    <a class="main-nav__link" href="app-tutorial.html"
-                      >App tutorial</a
-                    >
-                  </li>
-                  <li class="main-nav__item">
-                    <a class="main-nav__link" href="about.html">About us</a>
-                  </li>
-                  <li class="main-nav__item">
-                    <a class="main-nav__link" href="contact-us.html"
-                      >Contact us</a
-                    >
-                  </li>
-                </ul>
-              </nav>
-
-              <div class="auth-block" data-da=".mobile-menu__inner,991,3">
-                <a class="auth-block__link" href="#">
-                  <svg width="12" height="14">
-                    <use xlink:href="images/sprite.svg#user-icon"></use>
-                  </svg>
-                  Log in
-                </a>
-                <a class="auth-block__link auth-block__link--accent" href="#">
-                  Sign up
-                </a>
-              </div>
-
-              <!-- <div class="user-nav">
+            <!-- <div class="user-nav">
           <div class="user-nav__info-wrap">
             <img src="images/user-thumbnail.jpeg" width="36" height="36" alt="user thumbnail" class="user-nav__thumbnail">
             <div class="user-nav__name">igor</div>
@@ -150,382 +121,286 @@
           </ul>
       </div> -->
 
-              <button
-                class="burger"
-                id="burger"
-                data-target-id="mobile-menu"
-                data-target-class-toggle="mobile-menu--opened"
-                aria-label="mobile menu button"
-              >
-                <span></span>
-                <span></span>
-              </button>
+            <button class="burger" id="burger" data-target-id="mobile-menu" data-target-class-toggle="mobile-menu--opened" aria-label="mobile menu button">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main class="page__main">
+        <div class="page-info">
+          <div class="container">
+            <div class="page-info__inner">
+              <ul class="breadcrumbs page-info__breadcrumbs" aria-label="Breadcrumb" role="navigation">
+                <li class="breadcrumbs__item"><a href="/">Home</a></li>
+                <li class="breadcrumbs__item"><span>Reviews</span></li>
+              </ul>
+              <h1 class="page-info__title">Reviews</h1>
             </div>
           </div>
-        </header>
+        </div>
 
-        <main class="page__main">
-          <div class="page-info">
-            <div class="container">
-              <div class="page-info__inner">
-                <ul
-                  class="breadcrumbs page-info__breadcrumbs"
-                  aria-label="Breadcrumb"
-                  role="navigation"
-                >
-                  <li class="breadcrumbs__item">
-                    <a href="index.html">Home</a>
-                  </li>
-                  <li class="breadcrumbs__item"><span>Reviews</span></li>
-                </ul>
-                <h1 class="page-info__title">Reviews</h1>
-              </div>
-            </div>
-          </div>
-
-          <section class="reviews">
-            <div class="container">
-              <div class="reviews__inner">
-                <h2 class="reviews__title visually-hidden">reviews</h2>
-                <div class="reviews__list">
-                  <div class="reviews-item">
-                    <div class="reviews-item__inner">
-                      <div class="reviews-item__header">
-                        <span class="reviews-item__username"
-                          >Stasia Smerechevska</span
-                        >
+        <section class="reviews">
+          <div class="container">
+            <div class="reviews__inner">
+              <h2 class="reviews__title visually-hidden">reviews</h2>
+              <div class="reviews__list">
+                <div class="reviews-item">
+                  <div class="reviews-item__inner">
+                    <div class="reviews-item__header">
+                      <div class="reviews-item__avatar">
+                        <img src="images/user-thumbnail.jpeg" alt="avatar" width="45" height="45">
+                      </div>
+                      <div class="reviews-item__user-info-wrap">
+                        <span class="reviews-item__username">Stasia Smerechevska</span>
                         <date class="reviews-item__date">28 march | 10:58</date>
                       </div>
-                      <p class="reviews-item__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat.
-                      </p>
                     </div>
+                    <p class="reviews-item__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip ex ea
+                      commodo consequat.
+                    </p>
                   </div>
-                  <div class="reviews-item">
-                    <div class="reviews-item__inner">
-                      <div class="reviews-item__header">
-                        <span class="reviews-item__username"
-                          >Stasia Smerechevska</span
-                        >
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-item__inner">
+                    <div class="reviews-item__header">
+                      <div class="reviews-item__avatar">
+                        <img src="images/user-thumbnail.jpeg" alt="avatar" width="45" height="45">
+                      </div>
+                      <div class="reviews-item__user-info-wrap">
+                        <span class="reviews-item__username">Stasia Smerechevska</span>
                         <date class="reviews-item__date">28 march | 10:58</date>
                       </div>
-                      <p class="reviews-item__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat.
-                      </p>
                     </div>
+                    <p class="reviews-item__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip ex ea
+                      commodo consequat.
+                    </p>
                   </div>
-                  <div class="reviews-item">
-                    <div class="reviews-item__inner">
-                      <div class="reviews-item__header">
-                        <span class="reviews-item__username"
-                          >Stasia Smerechevska</span
-                        >
+                </div>
+                <div class="reviews-item">
+                  <div class="reviews-item__inner">
+                    <div class="reviews-item__header">
+                      <div class="reviews-item__avatar">
+                        <img src="images/user-thumbnail.jpeg" alt="avatar" width="45" height="45">
+                      </div>
+                      <div class="reviews-item__user-info-wrap">
+                        <span class="reviews-item__username">Stasia Smerechevska</span>
                         <date class="reviews-item__date">28 march | 10:58</date>
                       </div>
-                      <p class="reviews-item__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat.
-                      </p>
                     </div>
-                  </div>
-                  <div class="reviews-item">
-                    <div class="reviews-item__inner">
-                      <div class="reviews-item__header">
-                        <span class="reviews-item__username"
-                          >Stasia Smerechevska</span
-                        >
-                        <date class="reviews-item__date">28 march | 10:58</date>
-                      </div>
-                      <p class="reviews-item__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="reviews-item">
-                    <div class="reviews-item__inner">
-                      <div class="reviews-item__header">
-                        <span class="reviews-item__username"
-                          >Stasia Smerechevska</span
-                        >
-                        <date class="reviews-item__date">28 march | 10:58</date>
-                      </div>
-                      <p class="reviews-item__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat.
-                      </p>
-                    </div>
+                    <p class="reviews-item__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip ex ea
+                      commodo consequat.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-          <section class="page-section">
-            <div class="container">
-              <h2>
-                Give us please your feedback so <br />
-                we can improve our services
+          </div>
+        </section>
+        <section class="page-section">
+          <div class="container">
+            <form class="new-review-add-form">
+              <h2 class="new-review-add-form__title">
+                Give us please your feedback so <br>
+                  we can improve our services
               </h2>
-              <form class="new-review-add-form">
+              <div class="new-review-add-form__inner">
                 <label class="field-text new-review-add-form__field-text">
                   <span class="field-text__input-wrap">
-                    <textarea
-                      class="field-text__input"
-                      name="test"
-                      rows="10"
-                      placeholder="Write a review"
-                      style="
-                        overflow: hidden;
-                        overflow-wrap: break-word;
-                        resize: none;
-                        height: 40px;
-                      "
-                    ></textarea>
-                  </span>
+                      <textarea class="field-text__input" name="test" rows="1" style="
+                          overflow: hidden;
+                          overflow-wrap: break-word;
+                          resize: none;
+                          height: 40px;
+                        "></textarea>
+                    </span>
                 </label>
-                <div class="field-file new-review-add-form__field-file">
-                  <label class="field-file__input-wrap"
-                    ><input
-                      class="field-file__input"
-                      type="file"
-                      data-multiple-caption="selected files: {count}"
-                      name="reviewFile"
-                      multiple="multiple"
-                    />
-                    <div
-                      class="field-file__name-text"
-                      data-button-text="choose avatar"
-                    >
-                      nothing selected
-                    </div>
-                  </label>
-                </div>
-                <button
-                  class="button button--icon new-review-add-form__submit-btn"
-                  type="submit"
-                >
-                  <svg width="46" height="39">
-                    <use xlink:href="images/sprite.svg#right-arrow-icon"></use>
-                  </svg>
+                <button class="new-review-add-form__submit-btn" type="submit"></button>
+                <button class="button button--full-width button--primary" type="submit">
+                  Send
                 </button>
-              </form>
-            </div>
-          </section>
-        </main>
-      </div>
-      <div class="page__footer-wrap">
-        <footer class="page-footer">
-          <div class="page-footer__top">
-            <div class="container">
-              <div class="page-footer__top-inner">
-                <div class="page-footer__top-item">
-                  <a class="logo" href="/">
-                    <img src="images/logo.svg" alt="logotype" />
-                  </a>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="page__footer-wrap">
+      <footer class="page-footer">
+        <div class="page-footer__top">
+          <div class="container">
+            <div class="page-footer__top-inner">
+              <div class="page-footer__top-item">
+                <a class="logo" href="/">
+                  <img src="images/logo.svg" alt="logotype">
+                </a>
 
-                  <div class="footer-social-links">
-                    <p>
-                      Any questions? <br />
-                      Contact us on Telegram or WhatsApp <br />
-                      and we will help you directly.
-                    </p>
-                    <ul class="social">
-                      <li
-                        class="social__link-wrap social__link-wrap--telegram"
-                        title="Telegram"
-                      >
-                        <a
-                          class="social__link"
-                          href="#"
-                          aria-label="open telegram"
-                        >
-                          <svg width="13" height="11">
-                            <use
-                              xlink:href="images/sprite.svg#telegram-icon"
-                            ></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li
-                        class="social__link-wrap social__link-wrap--whatsapp"
-                        title="WhatsApp"
-                      >
-                        <a
-                          class="social__link"
-                          href="#"
-                          aria-label="open whatsapp"
-                        >
-                          <svg width="13" height="11">
-                            <use
-                              xlink:href="images/sprite.svg#whatsapp-icon"
-                            ></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="page-footer__top-item">
-                  <h2 class="page-footer__top-item-title">Menu</h2>
-                  <ul class="page-footer-list">
-                    <li class="page-footer-list__item">
-                      <a class="page-footer-list__link" href="pick-ups.html">
-                        Pick ups
+                <div class="footer-social-links">
+                  <p>
+                    Any questions? <br>
+              Contact us on Telegram or WhatsApp <br> and we will help you directly.
+                  </p>
+                  <ul class="social">
+                    <li class="social__link-wrap  social__link-wrap--telegram" title="Telegram">
+                      <a class="social__link" href="#" aria-label="open telegram">
+                        <svg width="13" height="11">
+                          <use xlink:href="images/sprite.svg#telegram-icon">
+                          </use>
+                        </svg>
                       </a>
                     </li>
-                    <li class="page-footer-list__item">
-                      <a class="page-footer-list__link" href="cubic-feets.html">
-                        Cf
+                    <li class="social__link-wrap  social__link-wrap--whatsapp" title="WhatsApp">
+                      <a class="social__link" href="#" aria-label="open whatsapp">
+                        <svg width="13" height="11">
+                          <use xlink:href="images/sprite.svg#whatsapp-icon">
+                          </use>
+                        </svg>
                       </a>
-                    </li>
-                    <li class="page-footer-list__item">
-                      <a
-                        class="page-footer-list__link"
-                        href="new-pick-up-post.html"
-                      >
-                        Post Pick up
-                      </a>
-                    </li>
-                    <li class="page-footer-list__item">
-                      <a class="page-footer-list__link" href="new-cf-post.html">
-                        Post Cf
-                      </a>
-                    </li>
-                    <li class="page-footer-list__item">
-                      <a class="page-footer-list__link" href="pricing.html">
-                        Pricing
-                      </a>
-                    </li>
-                    <li class="page-footer-list__item">
-                      <a class="page-footer-list__link" href="about.html">
-                        About us
-                      </a>
-                    </li>
-                    <li class="page-footer-list__item">
-                      <a class="page-footer-list__link" href="reviews.html">
-                        Reviews
-                      </a>
-                    </li>
-                    <li class="page-footer-list__item">
-                      <a
-                        class="page-footer-list__link"
-                        href="app-tutorial.html"
-                      >
-                        App Tutorial
-                      </a>
-                    </li>
-                    <li class="page-footer-list__item">
-                      <a class="page-footer-list__link" href="contact-us.html">
-                        Contact us
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="page-footer__top-item">
-                  <h2 class="page-footer__top-item-title">Contacts</h2>
-                  <ul class="page-footer-list">
-                    <li class="page-footer-list__item">
-                      <svg width="11" height="17">
-                        <use xlink:href="images/sprite.svg#mobile-icon"></use>
-                      </svg>
-                      <a class="page-footer-list__link" href="tel:380502004030">
-                        +38 (050) 200 40 30
-                      </a>
-                    </li>
-                    <li class="page-footer-list__item">
-                      <svg width="15" height="11">
-                        <use xlink:href="images/sprite.svg#email-icon"></use>
-                      </svg>
-                      <a
-                        class="page-footer-list__link"
-                        href="mailto:info@a2b.taxi"
-                      >
-                        info@a2b.taxi
-                      </a>
-                    </li>
-                    <li class="page-footer-list__item">
-                      <svg width="17" height="17">
-                        <use xlink:href="images/sprite.svg#clock-icon"></use>
-                      </svg>
-                      24 / 7 / 365
                     </li>
                   </ul>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="page-footer__bottom">
-            <div class="container">
-              <div class="page-footer__bottom-inner">
-                <p class="page-footer__copyright-text">
-                  Copyright © 2021. All rights reserved
-                </p>
-                <ul class="payment-method-list">
-                  <li class="payment-method-list__item">
-                    <a
-                      class="payment-method-list__link"
-                      href="#"
-                      aria-label="master card link"
-                    >
-                      <svg width="29" height="21">
-                        <use
-                          xlink:href="images/sprite.svg#master-card-icon"
-                        ></use>
-                      </svg>
+              <div class="page-footer__top-item">
+                <h2 class="page-footer__top-item-title">
+                  Menu
+                </h2>
+                <ul class="page-footer-list">
+                  <li class="page-footer-list__item">
+                    <a class="page-footer-list__link" href="pick-ups.html">
+                      Pick ups
                     </a>
                   </li>
-                  <li class="payment-method-list__item">
-                    <a
-                      class="payment-method-list__link"
-                      href="#"
-                      aria-label="visa card link"
-                    >
-                      <svg width="29" height="21">
-                        <use xlink:href="images/sprite.svg#visa-icon"></use>
-                      </svg>
+                  <li class="page-footer-list__item">
+                    <a class="page-footer-list__link" href="cubic-feets.html">
+                      Cf
                     </a>
                   </li>
-                  <li class="payment-method-list__item">
-                    <a
-                      class="payment-method-list__link"
-                      href="#"
-                      aria-label="apple pay link"
-                    >
-                      <svg width="29" height="21">
-                        <use
-                          xlink:href="images/sprite.svg#apple-pay-icon"
-                        ></use>
-                      </svg>
+                  <li class="page-footer-list__item">
+                    <a class="page-footer-list__link" href="new-pick-up-post.html">
+                      Post Pick up
                     </a>
+                  </li>
+                  <li class="page-footer-list__item">
+                    <a class="page-footer-list__link" href="new-cf-post.html">
+                      Post Cf
+                    </a>
+                  </li>
+                  <li class="page-footer-list__item">
+                    <a class="page-footer-list__link" href="pricing.html">
+                      Pricing
+                    </a>
+                  </li>
+                  <li class="page-footer-list__item">
+                    <a class="page-footer-list__link" href="about.html">
+                      About us
+                    </a>
+                  </li>
+                  <li class="page-footer-list__item">
+                    <a class="page-footer-list__link" href="reviews.html">
+                      Reviews
+                    </a>
+                  </li>
+                  <li class="page-footer-list__item">
+                    <a class="page-footer-list__link" href="app-tutorial.html">
+                      App Tutorial
+                    </a>
+                  </li>
+                  <li class="page-footer-list__item">
+                    <a class="page-footer-list__link" href="contact-us.html">
+                      Contact us
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
+
+              <div class="page-footer__top-item">
+                <h2 class="page-footer__top-item-title">
+                  Contacts
+                </h2>
+                <ul class="page-footer-list page-footer-list--contacts">
+                  <li class="page-footer-list__item">
+                    <svg width="11" height="17">
+                      <use xlink:href="images/sprite.svg#mobile-icon"></use>
+                    </svg>
+                    <a class="page-footer-list__link" href="tel:3476081634">
+                      3476081634
+                    </a>
+                  </li>
+                  <li class="page-footer-list__item">
+                    <svg width="15" height="11">
+                      <use xlink:href="images/sprite.svg#email-icon"></use>
+                    </svg>
+                    <a class="page-footer-list__link" href="mailto:therealmoversteam@gmail.com">
+                      therealmoversteam@gmail.com
+                    </a>
+                  </li>
+                  <li class="page-footer-list__item">
+                    <svg width="17" height="17">
+                      <use xlink:href="images/sprite.svg#clock-icon"></use>
+                    </svg>
+                    24 / 7 / 365
                   </li>
                 </ul>
               </div>
             </div>
-          </div>
-        </footer>
 
-        <a class="to-top to-top--visible" id="to-top" href="#">↑</a>
-      </div>
+          </div>
+        </div>
+        <div class="page-footer__bottom">
+          <div class="container">
+            <div class="page-footer__bottom-inner">
+              <p class="page-footer__copyright-text">
+                Copyright © 2021. All rights reserved
+              </p>
+              <ul class="payment-method-list">
+                <li class="payment-method-list__item">
+                  <a class="payment-method-list__link" href="#" aria-label="master card link">
+                    <svg width="29" height="21">
+                      <use xlink:href="images/sprite.svg#master-card-icon"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="payment-method-list__item">
+                  <a class="payment-method-list__link" href="#" aria-label="visa card link">
+                    <svg width="29" height="21">
+                      <use xlink:href="images/sprite.svg#visa-icon"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="payment-method-list__item">
+                  <a class="payment-method-list__link" href="#" aria-label="apple pay link">
+                    <svg width="29" height="21">
+                      <use xlink:href="images/sprite.svg#apple-pay-icon"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <a class="to-top to-top--visible" id="to-top" href="#">↑</a>
     </div>
-    <script src="js/vendors.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+  </div>
+  <script src="js/vendors.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
 </html>
