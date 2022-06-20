@@ -15,9 +15,9 @@
   background-color: #5c5d67;
 }
 .accordion__item--opened .accordion__title::after {
-  top: 20px;
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='16' height='10' viewBox='0 0 16 10' fill='%23fff' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M2.28571 0L8 5.83333L13.7143 0L16 1.16667L8 9.33333L0 1.16667L2.28571 0Z'/%3E %3C/svg%3E");
+  top: 48px;
   transform: rotate(180deg);
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='16' height='10' viewBox='0 0 16 10' fill='%23fff' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M2.28571 0L8 5.83333L13.7143 0L16 1.16667L8 9.33333L0 1.16667L2.28571 0Z'/%3E %3C/svg%3E");
 }
 .accordion__item--opened .accordion__content {
   display: block;
@@ -42,11 +42,12 @@
 .accordion__title::after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 23px;
   right: 28px;
   width: 30px;
   height: 30px;
-  transform: translateY(-50%);
+  transform-origin: top;
+  transition: 0.2s;
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='16' height='10' viewBox='0 0 16 10' fill='%23fff' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M2.28571 0L8 5.83333L13.7143 0L16 1.16667L8 9.33333L0 1.16667L2.28571 0Z'/%3E %3C/svg%3E");
   background-repeat: no-repeat;
   background-position: center;
@@ -1867,6 +1868,9 @@ input:disabled ~ .field-toggler__name-text:after {
 .page-footer__top-item:last-child {
   grid-column: 1/-1;
 }
+.page-footer__bottom {
+  background-color: #0c0c0c;
+}
 .page-footer__bottom-inner {
   display: flex;
   align-items: center;
@@ -3077,6 +3081,11 @@ span.pagination__item {
 .pricing-details__title {
   margin-bottom: 50px;
   text-align: center;
+}
+.pricing-details__price {
+  font-weight: 900;
+  line-height: 50px;
+  color: #276ef1;
 }
 .pricing-details__info {
   display: -ms-grid;
@@ -4305,6 +4314,9 @@ span.pagination__item {
   }
   .post-add-form .field-text__input {
     height: 50px;
+  }
+  .pricing-details__title br {
+    display: none;
   }
   .pricing-details__info {
     -ms-grid-columns: 1fr;
