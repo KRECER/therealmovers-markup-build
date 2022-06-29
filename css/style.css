@@ -400,6 +400,7 @@
   width: 40px;
   height: 40px;
   padding: 11px 10px;
+  color: transparent;
   background-color: transparent;
 }
 .button--icon:hover {
@@ -3148,7 +3149,7 @@ span.pagination__item {
 }
 .pricing-details__right-wrap {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .reset-password-form__title {
@@ -4383,6 +4384,7 @@ span.pagination__item {
   .pricing-details__info {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    padding-bottom: 50px;
   }
   .reset-password-form__fields-wrap {
     -ms-grid-columns: 1fr;
@@ -4728,8 +4730,6 @@ span.pagination__item {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
     row-gap: 10px;
-    -moz-column-gap: 10px;
-         column-gap: 10px;
     padding: 30px;
     background-color: whitesmoke;
   }
