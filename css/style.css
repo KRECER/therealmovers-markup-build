@@ -413,6 +413,29 @@
   background-color: transparent;
 }
 
+.button--social {
+  position: relative;
+  height: 38px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 30px;
+}
+.button--social div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  border: 1px solid #276ef1;
+  background-color: white;
+}
+.button--social span {
+  margin-left: 38px;
+}
+
 .button--primary {
   background-color: #276ef1;
 }
@@ -566,7 +589,7 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background: #666666;
+  background: black;
   transform-origin: 50% 50%;
 }
 .close span:before {
@@ -1645,9 +1668,10 @@ input:disabled ~ .field-toggler__name-text:after {
   align-items: center;
   position: relative;
   width: auto;
-  max-width: 480px;
+  max-width: 539px;
   min-height: calc(100% - 4em);
   margin: 2em auto;
+  padding: 0 15px;
   pointer-events: none;
 }
 .modal__content {
@@ -1656,6 +1680,7 @@ input:disabled ~ .field-toggler__name-text:after {
   position: relative;
   width: 100%;
   min-height: 40px;
+  padding: 47px;
   pointer-events: auto;
   background-color: white;
   outline: 0;
@@ -1663,24 +1688,20 @@ input:disabled ~ .field-toggler__name-text:after {
 .modal__header {
   flex-shrink: 0;
   position: relative;
-  padding: 16px 40px 16px 16px;
-  border-bottom: 1px solid #b3b3b3;
 }
 .modal__title {
-  margin: 0;
-  font-size: 22px;
-  font-weight: 400;
+  margin-bottom: 20px;
+  font-size: 28px;
 }
 .modal__close {
   position: absolute;
-  top: 4px;
-  right: 4px;
+  top: 15px;
+  right: 15px;
   outline: 0;
 }
 .modal__body {
   flex: 1 1 auto;
   position: relative;
-  padding: 16px;
 }
 .modal__footer {
   display: flex;
@@ -1698,6 +1719,18 @@ input:disabled ~ .field-toggler__name-text:after {
 .modal--show .modal__dialog {
   -webkit-animation: modal-dialog 0.3s 1 ease-out forwards;
           animation: modal-dialog 0.3s 1 ease-out forwards;
+}
+.modal--register-form .modal__dialog {
+  max-width: 848px;
+}
+.modal--login-form .modal__dialog {
+  max-width: 450px;
+}
+.modal--transportation-info .modal__dialog {
+  max-width: 1100px;
+}
+.modal--transportation-info .modal__content {
+  padding: 0;
 }
 
 .modal-open {
@@ -1717,24 +1750,31 @@ input:disabled ~ .field-toggler__name-text:after {
   height: 100vh;
   -webkit-animation: modal-backdrop 0.3s 1 ease-out forwards;
           animation: modal-backdrop 0.3s 1 ease-out forwards;
-  background-color: black;
 }
 
 @-webkit-keyframes modal-backdrop {
   from {
-    opacity: 0;
+    background: rgba(0, 0, 0, 0);
+    -webkit-backdrop-filter: blur(0);
+            backdrop-filter: blur(0);
   }
   to {
-    opacity: 0.6;
+    background: rgba(0, 0, 0, 0.75);
+    -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
   }
 }
 
 @keyframes modal-backdrop {
   from {
-    opacity: 0;
+    background: rgba(0, 0, 0, 0);
+    -webkit-backdrop-filter: blur(0);
+            backdrop-filter: blur(0);
   }
   to {
-    opacity: 0.6;
+    background: rgba(0, 0, 0, 0.75);
+    -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
   }
 }
 @-webkit-keyframes modal-dialog {
@@ -2921,6 +2961,56 @@ span.pagination__item {
   color: white;
 }
 
+.login-form__field-wrap {
+  position: relative;
+}
+.login-form__reset-password-btn, .login-form__remind-me-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #276ef1;
+  cursor: pointer;
+}
+.login-form__reset-password-btn:hover, .login-form__remind-me-btn:hover {
+  color: #0b42a8;
+}
+.login-form__submit-btn {
+  margin-bottom: 17px;
+  height: 50px;
+  text-transform: uppercase;
+}
+.login-form__register-link-wrap {
+  color: gray;
+}
+.login-form__divider {
+  position: relative;
+  color: gray;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.login-form__divider span {
+  position: relative;
+  z-index: 1;
+  padding: 0 5%;
+  background-color: white;
+}
+.login-form__divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  height: 1px;
+  transform: translateY(-50%);
+  background-color: #9c9c9c;
+}
+.login-form__social-btn {
+  margin-bottom: 15px;
+}
+.login-form__social-btn:last-child {
+  margin-bottom: 0;
+}
+
 .mobile-menu {
   position: fixed;
   z-index: 20;
@@ -3064,6 +3154,15 @@ span.pagination__item {
   margin-bottom: 15px;
 }
 
+.password-reset-form p {
+  margin-bottom: 31px;
+  color: #276ef1;
+}
+.password-reset-form__submit-btn {
+  height: 50px;
+  text-transform: uppercase;
+}
+
 .payment-method-list {
   display: flex;
   align-items: center;
@@ -3150,6 +3249,83 @@ span.pagination__item {
 .pricing-details__right-wrap {
   display: flex;
   justify-content: center;
+}
+
+.register-form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.register-form__social {
+  grid-column: 1/-1;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 42px;
+  margin-top: 20px;
+}
+.register-form__social-info h3 {
+  font-size: 24px;
+  line-height: 50px;
+}
+.register-form__social-info p {
+  max-width: 250px;
+  margin-bottom: 0;
+  line-height: 19px;
+}
+.register-form__social-btns {
+  display: flex;
+  flex-grow: 1;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.register-form__social-btn {
+  max-width: 210px;
+}
+.register-form__submit-btn {
+  grid-column: 1/-1;
+  margin-bottom: 17px;
+  height: 50px;
+  text-transform: uppercase;
+}
+
+.reservation-question-block__title {
+  margin-bottom: 20px;
+  font-size: 34px;
+  line-height: 34px;
+}
+.reservation-question-block p {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  color: #276ef1;
+}
+.reservation-question-block h4 {
+  margin-bottom: 10px;
+  line-height: 44px;
+}
+.reservation-question-block__confirm-btn {
+  margin-right: 15px;
+  padding-left: 3.3em;
+  padding-right: 3.3em;
+}
+.reservation-question-block__reject-btn {
+  padding-left: 3.2em;
+  padding-right: 3.2em;
+}
+
+.reset-form-notification p {
+  margin-bottom: 25px;
+}
+.reset-form-notification__home-link {
+  padding-left: 3.1em;
+  padding-right: 3.1em;
+  text-transform: uppercase;
 }
 
 .reset-password-form__title {
@@ -3298,6 +3474,123 @@ span.pagination__item {
 .top-section__tabs {
   max-width: 530px;
   background-color: #fff;
+}
+
+.transportation-info {
+  display: flex;
+}
+.transportation-info__left-side {
+  max-width: 460px;
+  padding: 50px 33px 50px 50px;
+  background-color: whitesmoke;
+}
+.transportation-info__right-side {
+  flex-grow: 1;
+  padding: 50px;
+}
+.transportation-info__contacts-title {
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+.transportation-info__contacts-list-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 18px;
+  line-height: 38px;
+  color: #276ef1;
+}
+.transportation-info__contacts-list-item-copy-btn {
+  cursor: pointer;
+}
+.transportation-info__contacts-list-item svg {
+  flex-shrink: 0;
+  width: 23px;
+  fill: black;
+}
+
+.transportation-props {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ebebeb;
+}
+.transportation-props__list {
+  min-width: 276px;
+  padding: 30px 20px;
+  background-color: whitesmoke;
+}
+.transportation-props__coordinates {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 30px;
+}
+.transportation-props__coordinates a {
+  display: inline-block;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 30px;
+}
+.transportation-props__coordinates span {
+  font-size: 16px;
+  line-height: 30px;
+  color: gray;
+}
+.transportation-props__coordinates-from span, .transportation-props__coordinates-to span {
+  display: inline-block;
+  width: 70%;
+}
+.transportation-props__coordinates-from {
+  margin-bottom: 12px;
+}
+.transportation-props__coordinates svg {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 10px;
+  transform: translateY(-50%);
+}
+.transportation-props__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.transportation-props__tags-item {
+  padding: 0 10px;
+  color: white;
+  font-size: 12px;
+  line-height: 30px;
+  background-color: black;
+}
+.transportation-props__date {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.transportation-props__date-value {
+  color: #276ef1;
+  font-size: 14px;
+  line-height: 14px;
+}
+.transportation-props__accent-value b {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 24px;
+  line-height: 19px;
+}
+.transportation-props__accent-value span {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 800;
+  font-size: 43px;
+  line-height: 19px;
+  color: #276ef1;
 }
 
 .transportations-search-form__title {
@@ -3605,6 +3898,18 @@ span.pagination__item {
   display: none;
 }
 
+.username-reset-form p {
+  margin-bottom: 30px;
+  color: #276ef1;
+}
+.username-reset-form .field-text {
+  margin-bottom: 20px;
+}
+.username-reset-form__submit-btn {
+  height: 50px;
+  text-transform: uppercase;
+}
+
 .video-preview {
   padding: 75px 0;
   background-color: whitesmoke;
@@ -3687,6 +3992,18 @@ span.pagination__item {
   .cabinet__inner {
     -moz-column-gap: 30px;
          column-gap: 30px;
+  }
+}
+@media (max-width: 1064px){
+  .reservation-question-block p {
+    max-width: 380px;
+  }
+  .transportation-info {
+    flex-direction: column;
+  }
+  .transportation-info__left-side {
+    max-width: 100%;
+    padding-right: 100px;
   }
 }
 @media only screen and (max-width: 991px) and (max-width: 991px){
@@ -3901,6 +4218,25 @@ span.pagination__item {
   }
   .pricing-details__left-wrap {
     padding: 30px;
+  }
+  .register-form {
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  .register-form__social {
+    flex-direction: column;
+    align-items: normal;
+    margin-bottom: 30px;
+  }
+  .register-form__social-btns {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .register-form__social-btn {
+    max-width: 100%;
   }
   .subscribe-section__inner {
     -ms-grid-columns: 1fr;
@@ -4189,6 +4525,10 @@ span.pagination__item {
   .main-nav__link--lvl-2 {
     padding-left: 2em;
   }
+  .modal__content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .page-footer__top-inner {
     display: -ms-grid;
     display: grid;
@@ -4386,6 +4726,21 @@ span.pagination__item {
     grid-template-columns: 1fr;
     padding-bottom: 50px;
   }
+  .register-form {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .register-form__social-btns {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .reservation-question-block__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .reservation-question-block p {
+    max-width: 100%;
+  }
   .reset-password-form__fields-wrap {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -4439,6 +4794,22 @@ span.pagination__item {
   }
   .top-section__tabs {
     max-width: 100%;
+  }
+  .transportation-info__left-side {
+    padding: 50px 20px;
+  }
+  .transportation-info__right-side {
+    padding: 50px 20px;
+  }
+  .transportation-info__contacts-list-item {
+    font-size: 17px;
+    line-height: 38px;
+  }
+  .transportation-props {
+    flex-direction: column;
+  }
+  .transportation-props__list {
+    margin-bottom: 30px;
   }
   .transportations-search-form__title {
     margin-bottom: 30px;
